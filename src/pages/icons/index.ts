@@ -1,0 +1,11 @@
+export { default as Iconfb1 } from "./iconfb1";
+export { default as Iconfb2 } from "./iconfb2";
+export { default as Iconfb3 } from "./iconfb3";
+export { default as Iconfb4 } from "./iconfb4";
+export { default as Iconfb5 } from "./iconfb5";
+export { default as Iconfb6 } from "./iconfb6";
+export { default as Iconfb7 } from "./iconfb7";
+export { default as Iconfb8 } from "./iconfb8";
+export { default as Iconfb9 } from "./iconfb9";
+export { default as Trochoi } from "./trochoi";
+export { default as IconSearch } from "./iconSearch";
