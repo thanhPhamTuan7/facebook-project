@@ -11,7 +11,7 @@ const Content = () => {
       style={{
         backgroundColor: "#f0f2f5",
         width: "100%",
-        height: "1000px",
+        paddingBottom: "20px",
         display: "flex",
         paddingTop: "20px",
       }}

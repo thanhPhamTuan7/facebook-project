@@ -119,7 +119,6 @@ const ContentLeft = () => {
           </div>
         ))}
         <div style={{ border: "0.4px solid #dfdada", width: "60%" }}></div>
-
         {/* //phanduoi */}
         <div
           style={{
@@ -145,7 +144,7 @@ const ContentLeft = () => {
               display: "flex",
               alignItems: "center",
               columnGap: "10px",
-              paddingRight: "100px",
+
               color: "#39393a",
               fontWeight: "bold",
             }}
@@ -162,6 +161,19 @@ const ContentLeft = () => {
             <div>{item.name}</div>
           </div>
         ))}
+
+        {/* //bottomleft */}
+        <div
+          style={{
+            marginTop: "5px",
+            fontSize: "12px",
+            opacity: "0.6",
+            lineHeight: 1.2,
+          }}
+        >
+          Quyền riêng tư . Điều khoản . Quảng cáo . Lựa chọn quảng cáo .Cookie .
+          Xem thêm . Meta 2023...
+        </div>
       </div>
     </div>
   );

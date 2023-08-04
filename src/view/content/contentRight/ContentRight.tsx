@@ -1,15 +1,18 @@
 import React from "react";
 import "./contentr.css";
 import Contact from "./Contact";
+import Conversation from "./Conversation";
 
 const listContentRight = [
   {
     image: "/imgs/15.jpg",
     label: "Đăng ký nhận ngay ưu đãi từ IT không giới hạn 84%",
+    labelMore: "shoppe.vn",
   },
   {
-    image: "/imgs/1.jpg",
-    label: "Đăng ký nhận ngay ưu đãi từ IT không giới hạn 84%",
+    image: "/imgs/qq.jpg",
+    label: "Miễn phí vip6",
+    labelMore: "vip6.vn",
   },
 ];
 const ContentRight = () => {
@@ -19,31 +22,42 @@ const ContentRight = () => {
         Được tài trợ
       </div>
       {listContentRight.map((item, idx) => (
-        <div
-          key={idx}
-          style={{
-            marginTop: "20px",
-            display: "flex",
-            alignItems: "center",
-            columnGap: "10px",
-          }}
-        >
-          <img
-            style={{
-              borderRadius: "10px",
-              width: "100px",
-              height: "100px",
-              objectFit: "cover",
-            }}
-            src="/imgs/15.jpg"
-          />
+        <div>
           <div
+            key={idx}
             style={{
-              fontWeight: "bold",
-              color: "#4c4d4e",
+              marginTop: "20px",
+              display: "flex",
+              alignItems: "center",
+              columnGap: "10px",
             }}
           >
-            Đăng ký nhận ngay ưu đãi từ IT không giới hạn 84%
+            <img
+              style={{
+                borderRadius: "10px",
+                width: "100px",
+                height: "100px",
+                objectFit: "cover",
+              }}
+              src={item.image}
+            />
+            <div
+              style={{
+                fontWeight: "bold",
+                color: "#4c4d4e",
+              }}
+            >
+              {item.label}
+              <div
+                style={{
+                  marginTop: "5px",
+                  fontSize: "12px",
+                  opacity: "0.6",
+                }}
+              >
+                {item.labelMore}
+              </div>
+            </div>
           </div>
         </div>
       ))}
@@ -83,6 +97,14 @@ const ContentRight = () => {
           }}
         ></div>
         <Contact />
+        <div
+          style={{
+            border: "0.4px solid #dfdada",
+            width: "100%",
+            marginTop: "20px",
+          }}
+        ></div>
+        <Conversation />
       </div>
     </div>
   );
