@@ -11,3 +11,8 @@
 ::-webkit-scrollbar-thumb {
   background-color: gray;
 }
+
+.avatar:hover {
+  background-color: #dddddd;
+  border-radius: 10px;
+}

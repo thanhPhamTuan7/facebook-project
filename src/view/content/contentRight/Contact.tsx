@@ -59,7 +59,7 @@ const Contact = () => {
           justifyContent: "space-between",
         }}
       >
-        <div style={{ flex: 2 }}>Người liên hệ</div>
+        <div style={{ flex: 2, padding: "10px 10px" }}>Người liên hệ</div>
         <div
           style={{
             display: "flex",
@@ -77,12 +77,14 @@ const Contact = () => {
       </div>
       {listContant.map((item, index) => (
         <div
+          className="contentright-hover"
           key={index}
           style={{
             display: "flex",
             alignItems: "center",
-            marginTop: "20px",
+            cursor: "pointer",
             columnGap: "10px",
+            padding: "10px 10px",
           }}
         >
           <div className="contact">

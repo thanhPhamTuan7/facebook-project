@@ -61,7 +61,7 @@ const listShortCuts = [
   },
   {
     icon: "/imgs/b4.jpg",
-    name: "Hội anh em lái xe công nghệ ( Grab , Bee , GoJeck , Uber )",
+    name: "Hội anh em  ( Grab , Bee , GoJeck , Uber )",
   },
   {
     icon: "/imgs/b5.jpg",
@@ -71,19 +71,19 @@ const listShortCuts = [
 
 const ContentLeft = () => {
   return (
-    <div
-      className="contentleft"
-      style={{
-        marginLeft: "20px",
-      }}
-    >
+    <div style={{ marginLeft: "10px" }} className="contentleft">
       <div>
         <div
+          className="avatar"
           style={{
             display: "flex",
             alignItems: "center",
             columnGap: "10px",
             fontWeight: "bold",
+            height: "45px",
+            cursor: "pointer",
+            width: "90%",
+            padding: "0 10px",
           }}
         >
           <Avatar
@@ -95,16 +95,19 @@ const ContentLeft = () => {
         </div>
         {listSlideLeft.map((item, index) => (
           <div
+            className="avatar"
             key={index}
             style={{
               fontWeight: "bold",
               display: "flex",
               alignItems: "center",
               columnGap: "10px",
-              marginTop: "10px",
-              marginBottom: "10px",
+              height: "45px",
               color: "#39393a",
+              cursor: "pointer",
               lineHeight: "2",
+              width: "90%",
+              padding: "0 10px",
             }}
           >
             <img
@@ -118,7 +121,14 @@ const ContentLeft = () => {
             <div>{item.name}</div>
           </div>
         ))}
-        <div style={{ border: "0.4px solid #dfdada", width: "60%" }}></div>
+        <div
+          style={{
+            border: "0.4px solid #dfdada",
+            width: "90%",
+            marginTop: "10px",
+            padding: "0 10px",
+          }}
+        ></div>
         {/* //phanduoi */}
         <div
           style={{
@@ -131,39 +141,46 @@ const ContentLeft = () => {
               opacity: "0.7",
               color: "#39393a",
               fontSize: "17px",
+              width: "90%",
+              padding: "0 10px",
             }}
           >
             Lối tắt của bạn
           </div>
         </div>
-        {listShortCuts.map((item, index) => (
-          <div
-            style={{
-              marginTop: "20px",
-              marginBottom: "20px",
-              display: "flex",
-              alignItems: "center",
-              columnGap: "10px",
-
-              color: "#39393a",
-              fontWeight: "bold",
-            }}
-          >
-            <img
+        <div style={{ marginTop: "20px" }}>
+          {listShortCuts.map((item, index) => (
+            <div
+              className="avatar"
               style={{
-                width: "35px",
-                height: "35px",
-                borderRadius: "5px",
-                objectFit: "cover",
+                display: "flex",
+                alignItems: "center",
+                columnGap: "10px",
+                color: "#39393a",
+                fontWeight: "bold",
+                width: "90%",
+                padding: "0 10px",
+                height: "55px",
+                cursor: "pointer",
               }}
-              src={item.icon}
-            />
-            <div>{item.name}</div>
-          </div>
-        ))}
+            >
+              <img
+                style={{
+                  width: "35px",
+                  height: "35px",
+                  borderRadius: "5px",
+                  objectFit: "cover",
+                }}
+                src={item.icon}
+              />
+              <div>{item.name}</div>
+            </div>
+          ))}
+        </div>
 
         {/* //bottomleft */}
         <div
+          className="botttomleft"
           style={{
             marginTop: "5px",
             fontSize: "12px",

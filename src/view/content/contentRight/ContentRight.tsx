@@ -6,7 +6,7 @@ import Conversation from "./Conversation";
 const listContentRight = [
   {
     image: "/imgs/15.jpg",
-    label: "Đăng ký nhận ngay ưu đãi từ IT không giới hạn 84%",
+    label: "CLICK ---> Chơi ngay ",
     labelMore: "shoppe.vn",
   },
   {
@@ -18,15 +18,23 @@ const listContentRight = [
 const ContentRight = () => {
   return (
     <div className="container">
-      <div className="contentrightcomponent" style={{}}>
+      <div className="contentrightcomponent" style={{ padding: "10px 10px" }}>
         Được tài trợ
       </div>
       {listContentRight.map((item, idx) => (
-        <div>
+        <div
+          style={{
+            cursor: "pointer",
+            paddingTop: "10px",
+            paddingBottom: "10px",
+            width: "100%",
+            padding: "10px 10px",
+          }}
+          className="contentright-hover"
+        >
           <div
             key={idx}
             style={{
-              marginTop: "20px",
               display: "flex",
               alignItems: "center",
               columnGap: "10px",
@@ -69,10 +77,23 @@ const ContentRight = () => {
         }}
       ></div>
       <div>
-        <div style={{ marginTop: "20px" }} className="contentrightcomponent">
+        <div
+          style={{ marginTop: "10px", padding: "10px 10px" }}
+          className="contentrightcomponent"
+        >
           Sinh nhật
         </div>
-        <div className="contain-happy">
+        <div
+          style={{
+            display: "flex",
+            columnGap: "5px",
+            marginTop: "10px",
+            alignItems: "center",
+            padding: "10px 10px",
+            cursor: "pointer",
+          }}
+          className="contentright-hover"
+        >
           <img
             style={{
               width: "30px",
