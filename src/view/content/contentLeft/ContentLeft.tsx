@@ -77,90 +77,92 @@ const ContentLeft = () => {
         marginLeft: "20px",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          columnGap: "10px",
-          fontWeight: "bold",
-        }}
-      >
-        <Avatar
-          style={{ width: "28px", height: "28px" }}
-          alt="Remy Sharp"
-          src="/imgs/avt.jpg"
-        />
-        Phạm Tuấn Thanh
-      </div>
-      {listSlideLeft.map((item, index) => (
+      <div>
         <div
-          key={index}
           style={{
-            fontWeight: "bold",
             display: "flex",
             alignItems: "center",
             columnGap: "10px",
-            marginTop: "10px",
-            marginBottom: "10px",
-            color: "#39393a",
-            lineHeight: "2",
-          }}
-        >
-          <img
-            style={{
-              width: "30px",
-              height: "30px",
-              objectFit: "cover",
-            }}
-            src={item.icon}
-          />
-          <div>{item.name}</div>
-        </div>
-      ))}
-      <div style={{ border: "0.4px solid #dfdada", width: "60%" }}></div>
-
-      {/* //phanduoi */}
-      <div
-        style={{
-          marginTop: "20px",
-        }}
-      >
-        <div
-          style={{
             fontWeight: "bold",
-            opacity: "0.7",
-            color: "#39393a",
-            fontSize: "17px",
           }}
         >
-          Lối tắt của bạn
+          <Avatar
+            style={{ width: "28px", height: "28px" }}
+            alt="Remy Sharp"
+            src="/imgs/avt.jpg"
+          />
+          Phạm Tuấn Thanh
         </div>
-      </div>
-      {listShortCuts.map((item, index) => (
+        {listSlideLeft.map((item, index) => (
+          <div
+            key={index}
+            style={{
+              fontWeight: "bold",
+              display: "flex",
+              alignItems: "center",
+              columnGap: "10px",
+              marginTop: "10px",
+              marginBottom: "10px",
+              color: "#39393a",
+              lineHeight: "2",
+            }}
+          >
+            <img
+              style={{
+                width: "30px",
+                height: "30px",
+                objectFit: "cover",
+              }}
+              src={item.icon}
+            />
+            <div>{item.name}</div>
+          </div>
+        ))}
+        <div style={{ border: "0.4px solid #dfdada", width: "60%" }}></div>
+
+        {/* //phanduoi */}
         <div
           style={{
             marginTop: "20px",
-            marginBottom: "20px",
-            display: "flex",
-            alignItems: "center",
-            columnGap: "10px",
-            paddingRight: "100px",
-            color: "#39393a",
-            fontWeight: "bold",
           }}
         >
-          <img
+          <div
             style={{
-              width: "35px",
-              height: "35px",
-              borderRadius: "5px",
-              objectFit: "cover",
+              fontWeight: "bold",
+              opacity: "0.7",
+              color: "#39393a",
+              fontSize: "17px",
             }}
-            src={item.icon}
-          />
-          <div>{item.name}</div>
+          >
+            Lối tắt của bạn
+          </div>
         </div>
-      ))}
+        {listShortCuts.map((item, index) => (
+          <div
+            style={{
+              marginTop: "20px",
+              marginBottom: "20px",
+              display: "flex",
+              alignItems: "center",
+              columnGap: "10px",
+              paddingRight: "100px",
+              color: "#39393a",
+              fontWeight: "bold",
+            }}
+          >
+            <img
+              style={{
+                width: "35px",
+                height: "35px",
+                borderRadius: "5px",
+                objectFit: "cover",
+              }}
+              src={item.icon}
+            />
+            <div>{item.name}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

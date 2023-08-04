@@ -1,3 +1,44 @@
 .container {
   padding: 10px 20px 10px 20px;
 }
+
+.contain-happy {
+  display: flex;
+  column-gap: 5px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.happy {
+  display: flex;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.contentrightcomponent {
+  color: #8f9195;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.happyopacity {
+  color: #39393a;
+}
+
+.happybold {
+  color: #39393a;
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.background {
+  background-color: #31a24c;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
