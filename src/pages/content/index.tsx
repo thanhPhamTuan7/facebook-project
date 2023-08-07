@@ -36,7 +36,6 @@ const Content = () => {
       <div
         style={{
           flex: "3",
-          // backgroundColor: "blue",
         }}
       >
         <ContentRight />

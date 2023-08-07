@@ -65,6 +65,7 @@ const Contact = () => {
             display: "flex",
             alignItems: "center",
             flex: 1,
+            columnGap: "5px",
             justifyContent: "space-around",
           }}
         >

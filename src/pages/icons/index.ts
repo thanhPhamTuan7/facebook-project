@@ -9,3 +9,4 @@ export { default as Iconfb8 } from "./iconfb8";
 export { default as Iconfb9 } from "./iconfb9";
 export { default as Trochoi } from "./trochoi";
 export { default as IconSearch } from "./iconSearch";
+export { default as IconTin } from "./icontin";

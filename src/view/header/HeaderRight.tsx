@@ -1,7 +1,7 @@
 import React from "react";
 import { Iconfb6, Iconfb7, Iconfb8, Iconfb9 } from "../../pages/icons";
 import Avatar from "@mui/material/Avatar";
-
+import "./headercomponent.css";
 const listHeaderRight = [
   {
     name: <Iconfb6 />,
