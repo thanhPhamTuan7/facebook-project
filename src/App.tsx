@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./pages/header";
 import Content from "./pages/content";
+import PersonPage from "./pages/person-page";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
       </div>
       <Content />
+      {/* <PersonPage /> */}
     </div>
   );
 }

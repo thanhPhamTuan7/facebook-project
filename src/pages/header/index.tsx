@@ -2,18 +2,21 @@ import React from "react";
 import HeaderLeft from "../../view/header/HeaderLeft";
 import HeaderCentent from "../../view/header/HeaderCentent";
 import HeaderRight from "../../view/header/HeaderRight";
-import "./header.css";
+import "./head er.css";
 
 const Header = () => {
   return (
     <div
-      className=""
+      className="ffsdfd"
       style={{
         width: "100%",
         height: "56px",
         backgroundColor: "#fff",
         display: "flex",
         alignItems: "center",
+        overflow: "hidden",
+        position: "fixed",
+        zIndex: 1000000000,
       }}
     >
       <div style={{ flex: 3, width: "100%" }}>

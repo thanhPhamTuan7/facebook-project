@@ -13,14 +13,13 @@ const Content = () => {
         width: "100%",
         paddingBottom: "20px",
         display: "flex",
-        paddingTop: "20px",
       }}
     >
-      <div></div>
       <div
         className="contentleft"
         style={{
           flex: "3",
+          marginTop: "80px",
         }}
       >
         <ContentLeft />
@@ -29,6 +28,7 @@ const Content = () => {
         style={{
           flex: "5.5",
           padding: "0 100px",
+          marginTop: "80px",
         }}
       >
         <ContentContent />
@@ -36,6 +36,7 @@ const Content = () => {
       <div
         style={{
           flex: "3",
+          marginTop: "80px",
         }}
       >
         <ContentRight />
