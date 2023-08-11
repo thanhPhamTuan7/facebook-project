@@ -5,10 +5,13 @@ import AddIcon from "@mui/icons-material/Add";
 import { GrAdd } from "react-icons/gr";
 import EditIcon from "@mui/icons-material/Edit";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import PersonLeft from "../../view/person/person-left/PersonLeft";
+import PersonRight from "../../view/person/person-right/PersonRight";
 
 const PersonPage = () => {
   return (
-    <div>
+    <div style={{ paddingBottom: "50px" }}>
       {/* //header-person */}
 
       <div className="person-page">
@@ -78,7 +81,8 @@ const PersonPage = () => {
 
           <div className="person-right">
             <div className="person-right-add">
-              <AddIcon />
+              {/* <Icon icon="material-symbols:add" /> */}
+              <AddIcon style={{}} />
               <div style={{ color: "#fff", fontWeight: "bold" }}>
                 Thêm vào tin
               </div>
@@ -100,7 +104,16 @@ const PersonPage = () => {
             <div className="firend">Ảnh</div>
             <div className="firend">Video</div>
             <div className="firend">Check in</div>
-            <div className="firend">Xem thêm</div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+              className="firend"
+            >
+              Xem thêm
+              <ArrowDropDownIcon />
+            </div>
           </div>
 
           <div className="icon-preson">
@@ -112,12 +125,8 @@ const PersonPage = () => {
       {/* //content-person */}
 
       <div className="content-person">
-        <div className="content-person-left">
-          <div style={{ width: "100%" }}>ffff</div>
-        </div>
-        <div className="content-person-right">
-          <div style={{}}>fffff</div>
-        </div>
+        <PersonLeft />
+        <PersonRight />
       </div>
     </div>
   );

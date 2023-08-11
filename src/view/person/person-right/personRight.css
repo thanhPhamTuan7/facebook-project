@@ -1,0 +1,37 @@
+.conatinenf {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+.content-baiviet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boloc-quanli {
+  display: flex;
+  align-items: center;
+  background-color: #e4e6eb;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 10px;
+  column-gap: 5px;
+  color: #171717;
+  font-weight: 600;
+}
+
+.ds-bannbe {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bangtin-perosn {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
