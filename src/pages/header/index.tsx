@@ -2,7 +2,7 @@ import React from "react";
 import HeaderLeft from "../../view/header/HeaderLeft";
 import HeaderCentent from "../../view/header/HeaderCentent";
 import HeaderRight from "../../view/header/HeaderRight";
-import "./head er.css";
+import "./header.css";
 
 const Header = () => {
   return (
