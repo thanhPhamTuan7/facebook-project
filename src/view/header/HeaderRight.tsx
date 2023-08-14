@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Iconfb6, Iconfb7, Iconfb8, Iconfb9 } from "../../pages/icons";
 import Avatar from "@mui/material/Avatar";
 import "./headercomponent.css";
+import { head } from "ramda";
 const listHeaderRight = [
   {
     name: <Iconfb6 />,
@@ -18,6 +19,11 @@ const listHeaderRight = [
 ];
 
 const HeaderRight = () => {
+  const [openPersonPage, setOpenPersonPage] = useState(false);
+  const handleClickPresonPage = () => {
+    setOpenPersonPage((edit) => !edit);
+  };
+
   return (
     <div
       style={{
@@ -45,8 +51,24 @@ const HeaderRight = () => {
           {item.name}
         </div>
       ))}
+      <div style={{ position: "relative" }} onClick={handleClickPresonPage}>
+        <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
+      </div>
 
-      <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
+      {openPersonPage && (
+        <div
+          style={{
+            position: "absolute",
+            backgroundColor: "red",
+            marginTop: "1000px",
+            display: "block",
+            width: "400px",
+            height: "500px",
+          }}
+        >
+          sdjkfjsdf
+        </div>
+      )}
     </div>
   );
 };

@@ -16,7 +16,11 @@ const PersonPage = () => {
 
       <div className="person-page">
         <div className="person-bg">
-          <img className="person-img" src="/imgs/anhbia.jpg" />
+          <img
+            style={{ cursor: "pointer" }}
+            className="person-img"
+            src="/imgs/anhbia.jpg"
+          />
         </div>
 
         {/* //header-person-left */}
@@ -24,7 +28,11 @@ const PersonPage = () => {
         <div className="person-profile">
           <div className="person-left-center">
             <div className="person-avatart">
-              <img src="/imgs/avt.jpg" className="person-avt" />
+              <img
+                style={{ cursor: "pointer" }}
+                src="/imgs/avt.jpg"
+                className="person-avt"
+              />
               <div className="person-avt-child">
                 <CameraAltIcon />
               </div>
@@ -80,16 +88,23 @@ const PersonPage = () => {
           {/* //header-person-right */}
 
           <div className="person-right">
-            <div className="person-right-add">
-              {/* <Icon icon="material-symbols:add" /> */}
-              <AddIcon style={{}} />
-              <div style={{ color: "#fff", fontWeight: "bold" }}>
+            <div>
+              <div
+                className="person-right-add"
+                style={{ color: "#fff", fontWeight: "bold", cursor: "pointer" }}
+              >
                 Thêm vào tin
               </div>
             </div>
             <div className="person-right-right">
               <EditIcon />
-              <div style={{ fontWeight: "bold", color: "#172045" }}>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  color: "#172045",
+                  cursor: "pointer",
+                }}
+              >
                 Chỉnh sửa trang cá nhân
               </div>
             </div>

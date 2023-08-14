@@ -65,6 +65,7 @@
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .profle-person-title {
@@ -90,6 +91,9 @@
   border-radius: 5px;
   width: fit-content;
   padding: 10px 10px 10px 10px;
+}
+.person-right-add:hover {
+  background-color: #0066ff;
 }
 
 .person-right-right {
@@ -192,4 +196,8 @@
   height: 180px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.person-right-right:hover {
+  background-color: #dddddd;
 }

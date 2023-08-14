@@ -170,6 +170,7 @@
   display: flex;
   align-items: center;
   column-gap: 5px;
+  cursor: pointer;
 }
 
 .content-person-story {
@@ -189,16 +190,27 @@
 
 .person-left-friend {
   background-color: #fff;
-  padding: 16px;
+  padding: 8px 16px 16px 16px;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
 .anh {
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
+}
+.anh:hover {
+  text-decoration: underline;
 }
 .all-anh {
   color: #669ce6;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .container-image {
@@ -219,7 +231,7 @@
 
 .person-friend-contaner {
   background-color: #fff;
-  padding: 16px;
+  padding: 8px 16px 16px 16px;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
@@ -230,4 +242,37 @@
 .name-firndfds {
   font-weight: bold;
   font-size: 14px;
+}
+
+.csts:hover {
+  background-color: red;
+}
+
+.frivate-icon:hover {
+  background-color: #eeeeee;
+}
+
+.fsdfsdf:hover {
+  filter: brightness(90%) saturate(100%);
+}
+.anh-friend:hover {
+  filter: brightness(90%) saturate(100%);
+}
+
+.all-anh:hover {
+  background-color: #eeeeee;
+}
+
+.text-bottom:hover {
+  text-decoration: underline;
+}
+
+.story-thanh {
+  overflow: hidden;
+}
+.story-thanh img {
+  transition: 0.9s ease;
+}
+.story-thanh:hover img {
+  transform: scale(1.03);
 }

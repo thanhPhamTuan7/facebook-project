@@ -22,6 +22,7 @@ const PersonLeft = () => {
               One more time❤️
             </div>
             <div
+              className="csts"
               style={{
                 width: "100%",
                 height: "36px",
@@ -173,20 +174,22 @@ const PersonLeft = () => {
               </div>
             </div>
 
-            <div
-              style={{
-                width: "100%",
-                height: "36px",
-                backgroundColor: "#e4e6eb",
-                borderRadius: "5px",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: "15px",
-              }}
-            >
-              Chỉnh sửa chi tiết
+            <div className="csts">
+              <div
+                style={{
+                  width: "100%",
+                  height: "36px",
+                  backgroundColor: "#e4e6eb",
+                  borderRadius: "5px",
+                  fontWeight: "bold",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: "15px",
+                }}
+              >
+                Chỉnh sửa chi tiết
+              </div>
             </div>
 
             {/* //dasdas */}
@@ -223,6 +226,7 @@ const PersonLeft = () => {
             {/* //fasfas */}
 
             <div
+              className="csts"
               style={{
                 width: "100%",
                 height: "36px",
@@ -238,22 +242,22 @@ const PersonLeft = () => {
               Chỉnh sửa sở thích
             </div>
 
-            <div className="content-person-story">
-              <div>
+            <div style={{ cursor: "pointer" }} className="content-person-story">
+              <div className="story-thanh">
                 <img
                   className="content-person-story-imgs"
                   src="/imgs/st1.jpg"
                 />
                 <div style={{ textAlign: "center" }}>...</div>
               </div>
-              <div>
+              <div className="story-thanh">
                 <img
                   className="content-person-story-imgs"
                   src="/imgs/st2.jpg"
                 />
                 <div style={{ textAlign: "center" }}>💖💖</div>
               </div>
-              <div>
+              <div className="story-thanh">
                 <img
                   className="content-person-story-imgs"
                   src="/imgs/st3.jpg"
@@ -263,6 +267,7 @@ const PersonLeft = () => {
             </div>
 
             <div
+              className="csts"
               style={{
                 width: "100%",
                 height: "36px",
@@ -296,7 +301,7 @@ const PersonLeft = () => {
             <div className="all-anh">Xem tất cả ảnh</div>
           </div>
 
-          <div className="container-image">
+          <div style={{ cursor: "pointer" }} className="container-image">
             <img className="anh-friend" src="/imgs/tt1.jpg" />
             <img className="anh-friend" src="/imgs/tt2.jpg" />
             <img className="anh-friend" src="/imgs/tt3.jpg" />
@@ -331,7 +336,7 @@ const PersonLeft = () => {
             634 người bạn
           </div>
 
-          <div className="container-image">
+          <div style={{ cursor: "pointer" }} className="container-image">
             <div className="fsdfsdf">
               <img className="anh-friend" src="/imgs/gai1.jpg" />
               <div className="name-firndfds">Trần Minh</div>
@@ -382,6 +387,7 @@ const PersonLeft = () => {
         <div className="text-bottom">Quảng cáo</div>
         <div className="text-bottom">.</div>
         <div className="text-bottom">Lựa chọn quảng cáo</div>
+        <div className="text-bottom">.</div>
         <div
           style={{ display: "flex", alignItems: "center", columnGap: "2px" }}
           className="text-bottom"
