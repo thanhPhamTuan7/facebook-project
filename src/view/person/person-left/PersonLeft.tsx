@@ -19,7 +19,7 @@ const PersonLeft = () => {
                 textAlign: "center",
               }}
             >
-              One more time !
+              One more time❤️
             </div>
             <div
               style={{
@@ -239,9 +239,27 @@ const PersonLeft = () => {
             </div>
 
             <div className="content-person-story">
-              <img className="content-person-story-imgs" src="/imgs/i2.jpg" />
-              <img className="content-person-story-imgs" src="/imgs/i2.jpg" />
-              <img className="content-person-story-imgs" src="/imgs/i2.jpg" />
+              <div>
+                <img
+                  className="content-person-story-imgs"
+                  src="/imgs/st1.jpg"
+                />
+                <div style={{ textAlign: "center" }}>...</div>
+              </div>
+              <div>
+                <img
+                  className="content-person-story-imgs"
+                  src="/imgs/st2.jpg"
+                />
+                <div style={{ textAlign: "center" }}>💖💖</div>
+              </div>
+              <div>
+                <img
+                  className="content-person-story-imgs"
+                  src="/imgs/st3.jpg"
+                />
+                <div style={{ textAlign: "center" }}>🤍</div>
+              </div>
             </div>
 
             <div
@@ -279,12 +297,12 @@ const PersonLeft = () => {
           </div>
 
           <div className="container-image">
-            <img className="anh-friend" src="/imgs/i2.jpg" />
-            <img className="anh-friend" src="/imgs/i2.jpg" />
-            <img className="anh-friend" src="/imgs/i2.jpg" />
-            <img className="anh-friend" src="/imgs/i2.jpg" />
-            <img className="anh-friend" src="/imgs/i2.jpg" />
-            <img className="anh-friend" src="/imgs/i2.jpg" />
+            <img className="anh-friend" src="/imgs/tt1.jpg" />
+            <img className="anh-friend" src="/imgs/tt2.jpg" />
+            <img className="anh-friend" src="/imgs/tt3.jpg" />
+            <img className="anh-friend" src="/imgs/tt4.jpg" />
+            <img className="anh-friend" src="/imgs/tt5.jpg" />
+            <img className="anh-friend" src="/imgs/tt6.jpg" />
           </div>
         </div>
       </div>
@@ -315,28 +333,28 @@ const PersonLeft = () => {
 
           <div className="container-image">
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
+              <img className="anh-friend" src="/imgs/gai1.jpg" />
               <div className="name-firndfds">Trần Minh</div>
             </div>
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
-              <div className="name-firndfds">Vũ Việt Hoàng</div>
+              <img className="anh-friend" src="/imgs/gai2.jpg" />
+              <div className="name-firndfds">Vũ Hoàng</div>
             </div>
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
+              <img className="anh-friend" src="/imgs/gai3.jpg" />
               <div className="name-firndfds">Long Chu</div>
             </div>
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
+              <img className="anh-friend" src="/imgs/gai4.jpg" />
               <div className="name-firndfds">Nguyễn Hòa</div>
             </div>
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
+              <img className="anh-friend" src="/imgs/gai5.jpg" />
               <div className="name-firndfds">Minh Ánh</div>
             </div>
             <div className="fsdfsdf">
-              <img className="anh-friend" src="/imgs/i2.jpg" />
-              <div className="name-firndfds">Lê Đình Chiến</div>
+              <img className="anh-friend" src="/imgs/gai6.jpg" />
+              <div className="name-firndfds">Lê Chiến</div>
             </div>
           </div>
         </div>

@@ -16,24 +16,25 @@ import { IconBangTin } from "../../pages/icons";
 
 const listNews = [
   {
-    avatar: "/imgs/i2.jpg",
+    avatar: "/imgs/avt.jpg",
     title: "Phạm Tuấn Thanh",
     time: "13 giờ trước",
-    content: "There are many bat products as smartphones.",
-    image: "/imgs/i3.jpg",
-    like: "223",
-    comment: "250",
-    share: "300",
+    content:
+      "Có lẽ tới cuối cùng, cũng chỉ mong yêu một người, một tình yêu thật bình thường…Sẽ chẳng phải là cả ngày kè kè bên nhau vì cuộc sống ai cũng sẽ có những mối bận tâm riêng, cái ta cần là bình dị bên những câu hỏi thăm, bên những cử chỉ ân cần. Và đôi khi chỉ là,Ngày hôm nay của em thế nào?",
+    image: "/imgs/bv1.jpg",
+    like: "232423",
+    comment: "254320",
+    share: "304230",
   },
   {
-    avatar: "/imgs/i2.jpg",
+    avatar: "/imgs/avt.jpg",
     title: "Phạm Tuấn Thanh",
-    time: "13 giờ trước",
-    content: "There are many bat products as smartphones.",
-    image: "/imgs/i3.jpg",
+    time: "1 giờ trước",
+    content: "=))",
+    image: "/imgs/bv2.jpg",
     like: "223",
-    comment: "250",
-    share: "300",
+    comment: "25450",
+    share: "900",
   },
   // {
   //   avatar: "/imgs/i2.jpg",
@@ -98,7 +99,7 @@ const Bangtin = () => {
             <img
               style={{ marginTop: "-2px" }}
               className="postImg2"
-              src="/imgs/i2.jpg"
+              src={item.image}
               alt=""
             />
             <div className="postBotttom">
@@ -220,7 +221,7 @@ const Bangtin = () => {
                 </span>
               </div>
             </div>
-            <div style={{ paddingLeft: "16px" }} className="borderPost"></div>
+            {/* <div style={{ paddingLeft: "16px" }} className="borderPost"></div> */}
           </div>
         </div>
       ))}

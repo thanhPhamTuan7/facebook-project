@@ -16,7 +16,7 @@ const PersonPage = () => {
 
       <div className="person-page">
         <div className="person-bg">
-          <img className="person-img" src="/imgs/i3.jpg" />
+          <img className="person-img" src="/imgs/anhbia.jpg" />
         </div>
 
         {/* //header-person-left */}
@@ -36,42 +36,42 @@ const PersonPage = () => {
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai1.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai2.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai3.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai4.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai5.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai6.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai7.jpg"
                 />
                 <img
                   className="imgs-bb"
                   style={{ width: "32px", height: "32px" }}
-                  src="/imgs/avt.jpg"
+                  src="/imgs/gai8.jpg"
                 />
               </div>
             </div>
