@@ -14,9 +14,9 @@ const Header = () => {
         backgroundColor: "#fff",
         display: "flex",
         alignItems: "center",
-        overflow: "hidden",
+
         position: "fixed",
-        zIndex: 1000000000,
+        zIndex: 1,
       }}
     >
       <div style={{ flex: 3, width: "100%" }}>
