@@ -48,12 +48,13 @@
 
 .notifi {
   position: absolute;
-  bottom: -363px;
+  bottom: -530px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
   padding: 16px;
-  width: 360px;
   border-radius: 10px;
+  overflow-y: scroll;
+  height: 500px;
 }
 
 .thongbao-children {
@@ -88,4 +89,56 @@
 }
 .dsfsgd:hover {
   background-color: #eeeeee;
+}
+
+.coppy-cat {
+  background-color: #1491f2;
+  width: fit-content;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.ten {
+  font-weight: bold;
+}
+.opa {
+  opacity: 0.7;
+  font-size: 14px;
+}
+.hover-thongbao {
+  padding: 8px;
+}
+
+.hover-thongbao:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.message-container {
+  position: absolute;
+  bottom: -531px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  width: 360px;
+  padding: 16px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.hover-message:hover {
+  background-color: #eeeeee;
+}
+.hover-hopthu:hover {
+}
+
+.box-mess {
+  padding: 8px;
+}
+
+.box-mess:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
 }
