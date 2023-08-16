@@ -5,39 +5,39 @@ import "./contentLeft.css";
 
 const listSlideLeft = [
   {
-    icon: "/imgs/3.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/-UR-mdYpyXa.png",
     name: "Bạn bè",
   },
   {
-    icon: "/imgs/4.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/NCc4ln3EAaS.png",
     name: "Nhóm",
   },
   {
-    icon: "/imgs/5.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/XXwl2m1vjqM.png",
     name: "Sự kiện",
   },
   {
-    icon: "/imgs/6.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/AYj2837MmgX.png",
     name: "Bảng feed",
   },
   {
-    icon: "/imgs/7.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/rEk7fp0z5AA.png",
     name: "Marketplace",
   },
   {
-    icon: "/imgs/8.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/E_ZpLgQOkZb.png",
     name: "Chiến dịch gây quỹ",
   },
   {
-    icon: "/imgs/9.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Tvf-JvODx7o.png",
     name: "Chơi game",
   },
   {
-    icon: "/imgs/10.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/X1wwBNSCk5F.png",
     name: "Đã lưu",
   },
   {
-    icon: "/imgs/11.png",
+    icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/xH4w-lk44we.png",
     name: "Đặt hàng",
   },
   {

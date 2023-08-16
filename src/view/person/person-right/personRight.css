@@ -20,13 +20,34 @@
   column-gap: 5px;
   color: #171717;
   font-weight: 600;
+  cursor: pointer;
 }
-
+.boloc-quanli:hover {
+  background-color: #dddddd;
+  opacity: 0.8;
+}
 .ds-bannbe {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+}
+.danhsachbanbe-child {
+  padding: 8px;
+}
+.danhsachbanbe-child:hover {
+  background-color: #dddddd;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+.chedoluoi {
+  padding: 8px;
+}
+.chedoluoi:hover {
+  background-color: #dddddd;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 
 .bangtin-perosn {

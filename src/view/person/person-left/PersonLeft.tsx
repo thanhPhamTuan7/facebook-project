@@ -21,22 +21,9 @@ const PersonLeft = () => {
             >
               One more time❤️
             </div>
-            <div
-              className="csts"
-              style={{
-                width: "100%",
-                height: "36px",
-                backgroundColor: "#e4e6eb",
-                borderRadius: "5px",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: "15px",
-              }}
-            >
-              Chỉnh sửa tiểu sử
-            </div>
+
+            <div className="csts1">Chỉnh sửa tiểu sử</div>
+
             <div style={{ width: "100%", marginTop: "15px" }}>
               <div style={{ display: "flex", columnGap: "10px" }}>
                 <img
@@ -52,7 +39,7 @@ const PersonLeft = () => {
                 >
                   <div style={{}} className="">
                     Học Information of Technology (IT) tại
-                    <div style={{ fontWeight: "bold" }} className="">
+                    <div style={{ fontWeight: "bold" }} className="aaaaaaa">
                       Hanoi University of Business and Technology - HUBT
                     </div>
                   </div>
@@ -85,7 +72,7 @@ const PersonLeft = () => {
                     className=""
                   >
                     Sống tại
-                    <div style={{ fontWeight: "bold" }} className="">
+                    <div style={{ fontWeight: "bold" }} className="aaaaaaa">
                       Hà Nội
                     </div>
                   </div>
@@ -118,7 +105,7 @@ const PersonLeft = () => {
                     className=""
                   >
                     Đến từ
-                    <div style={{ fontWeight: "bold" }} className="">
+                    <div style={{ fontWeight: "bold" }} className="aaaaaaa">
                       Bắc Ninh
                     </div>
                   </div>
@@ -174,23 +161,7 @@ const PersonLeft = () => {
               </div>
             </div>
 
-            <div className="csts">
-              <div
-                style={{
-                  width: "100%",
-                  height: "36px",
-                  backgroundColor: "#e4e6eb",
-                  borderRadius: "5px",
-                  fontWeight: "bold",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: "15px",
-                }}
-              >
-                Chỉnh sửa chi tiết
-              </div>
-            </div>
+            <div className="csts2">Chỉnh sửa chi tiết</div>
 
             {/* //dasdas */}
 
@@ -225,22 +196,7 @@ const PersonLeft = () => {
 
             {/* //fasfas */}
 
-            <div
-              className="csts"
-              style={{
-                width: "100%",
-                height: "36px",
-                backgroundColor: "#e4e6eb",
-                borderRadius: "5px",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: "15px",
-              }}
-            >
-              Chỉnh sửa sở thích
-            </div>
+            <div className="csts3">Chỉnh sửa sở thích</div>
 
             <div style={{ cursor: "pointer" }} className="content-person-story">
               <div className="story-thanh">
@@ -266,22 +222,7 @@ const PersonLeft = () => {
               </div>
             </div>
 
-            <div
-              className="csts"
-              style={{
-                width: "100%",
-                height: "36px",
-                backgroundColor: "#e4e6eb",
-                borderRadius: "5px",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: "15px",
-              }}
-            >
-              Chỉnh sửa phần đáng chú ý
-            </div>
+            <div className="csts4">Chỉnh sửa phần đáng chú ý</div>
           </div>
         </div>
       </div>

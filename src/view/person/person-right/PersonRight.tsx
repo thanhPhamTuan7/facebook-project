@@ -43,6 +43,7 @@ const PersonRight = () => {
 
         <div className="ds-bannbe">
           <div
+            className="danhsachbanbe-child"
             style={{
               display: "flex",
               alignItems: "center",
@@ -55,6 +56,7 @@ const PersonRight = () => {
             Xem theo danh sách
           </div>
           <div
+            className="chedoluoi"
             style={{
               display: "flex",
               alignItems: "center",

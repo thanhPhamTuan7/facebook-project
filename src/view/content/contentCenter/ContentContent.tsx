@@ -18,14 +18,25 @@ import Bangtin from "../../../component/bangtin/Bangtin";
 
 const listStory = [
   {
-    imgs: "/imgs/i3.jpg",
+    imgs: "/imgs/gai1.jpg",
     label: "Phạm T. Thanh",
-    imgs_tin: "/imgs/i1.png",
+    imgs_tin: "/imgs/gai5.jpg",
+    id: 1,
   },
   {
-    imgs: "/imgs/i3.jpg",
+    imgs: "/imgs/gai2.jpg",
     label: "Lê Chiến",
-    imgs_tin: "/imgs/i2.jpg",
+    imgs_tin: "/imgs/gai6.jpg",
+  },
+  {
+    imgs: "/imgs/gai3.jpg",
+    label: "Hoàng Nguyễn",
+    imgs_tin: "/imgs/gai7.jpg",
+  },
+  {
+    imgs: "/imgs/gai4.jpg",
+    label: "Văn Hòa",
+    imgs_tin: "/imgs/gai8.jpg",
   },
 ];
 
@@ -45,11 +56,11 @@ const ContentContent = () => {
       >
         {/* //content tin  */}
 
-        <div style={{ padding: "16px 16px 16px 16px" }}>
-          <div className="story">
+        {/* <div>
+          <div style={{ padding: "16px" }} className="story">
             <div className="storyTopBox">
               <div className="storyCard">
-                <img src="/imgs/i3.jpg" alt="" className="imgStoryCard" />
+                <img src="/imgs/gai1.jpg" alt="" className="imgStoryCard" />
                 <div className="storyUpload">
                   <div className="iconStory">
                     <div
@@ -69,50 +80,52 @@ const ContentContent = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {listStory.map((item, index) => (
-          <div style={{ padding: "16px 16px 16px 16px" }}>
-            <div className="story">
-              <div className="storyTopBox">
-                <div style={{ position: "relative" }} className="storyCard">
-                  <img src={item.imgs} alt="" className="imgStoryCard" />
-                  <div
-                    style={{
-                      position: "absolute",
-                      bottom: 5,
-                      left: 4,
-                      color: "#fff",
-                      fontWeight: "bold",
-                      fontSize: "14px",
-                    }}
-                  >
-                    {item.label}
-                  </div>
+          <div key={index}>
+            <div style={{ padding: "16px 16px 16px 16px" }}>
+              <div className="story">
+                <div className="storyTopBox">
+                  <div style={{ position: "relative" }} className="storyCard">
+                    <img src={item.imgs} alt="" className="imgStoryCard" />
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 5,
+                        left: 4,
+                        color: "#fff",
+                        fontWeight: "bold",
+                        fontSize: "14px",
+                      }}
+                    >
+                      {item.label}
+                    </div>
 
-                  <div>
-                    <div className="contentdsf">
-                      <div className="contact">
-                        <div
-                          style={{
-                            backgroundColor: "#1876f2",
-                            borderRadius: "50%",
-                            padding: "4px 4px 4px 4px",
-                            display: "flex",
-                            alignItems: "center",
-                          }}
-                        >
-                          <img
+                    <div>
+                      <div className="contentdsf">
+                        <div className="contact">
+                          <div
                             style={{
-                              width: "35px",
-                              height: "35px",
+                              backgroundColor: "#1876f2",
                               borderRadius: "50%",
+                              padding: "4px 4px 4px 4px",
+                              display: "flex",
+                              alignItems: "center",
                             }}
-                            src={item.imgs_tin}
-                          />
-                        </div>
+                          >
+                            <img
+                              style={{
+                                width: "35px",
+                                height: "35px",
+                                borderRadius: "50%",
+                              }}
+                              src={item.imgs_tin}
+                            />
+                          </div>
 
-                        <div className="background"></div>
+                          <div className="background"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

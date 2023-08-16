@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import { Avatar } from "flowbite-react";
+import Avatar from "@mui/material/Avatar";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import PublicIcon from "@mui/icons-material/Public";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
@@ -13,6 +13,9 @@ import ClearIcon from "@mui/icons-material/Clear";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { IconBangTin } from "../../pages/icons";
+import SearchIcon from "@mui/icons-material/Search";
+import SendIcon from "@mui/icons-material/Send";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const listNews = [
   {
@@ -221,7 +224,65 @@ const Bangtin = () => {
                 </span>
               </div>
             </div>
-            {/* <div style={{ paddingLeft: "16px" }} className="borderPost"></div> */}
+            <div style={{ paddingLeft: "16px" }} className="borderPost"></div>
+
+            <div
+              style={{
+                padding: "4px 16px 4px 16px",
+                display: "flex",
+                alignItems: "center",
+                columnGap: "10px",
+                paddingBottom: "10px",
+              }}
+            >
+              <div
+                style={{ position: "relative" }}
+                className="trangcanhanclick"
+              >
+                <Avatar
+                  style={{ width: "35px", height: "35px" }}
+                  alt="Remy Sharp"
+                  src="/imgs/avt.jpg"
+                />
+              </div>
+              <div
+                style={{
+                  backgroundColor: "#eeeeee",
+                  padding: "4px",
+                  borderRadius: "50%",
+                  width: "10px",
+                  height: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "absolute",
+                  top: "2000px",
+                  left: "560px",
+                }}
+              >
+                <KeyboardArrowDownIcon />
+              </div>
+
+              <div
+                style={{ paddingLeft: "16px", paddingRight: "16px" }}
+                className="searchMessengerCard"
+              >
+                <input
+                  style={{ height: "30px" }}
+                  placeholder="Viết bình luận...."
+                  className="searchInput"
+                />
+                <div
+                  style={{
+                    fontSize: "5px",
+                    opacity: "0.7",
+                    fontWeight: "bold",
+                  }}
+                >
+                  <SendIcon />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ))}

@@ -18,6 +18,15 @@ import GridViewIcon from "@mui/icons-material/GridView";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import { Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import EditCalendarIcon from "@mui/icons-material/EditCalendar";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import RadioIcon from "@mui/icons-material/Radio";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TourIcon from "@mui/icons-material/Tour";
+import CampaignIcon from "@mui/icons-material/Campaign";
+import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import EventIcon from "@mui/icons-material/Event";
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
 const listHeaderRight = [
   {
@@ -171,6 +180,171 @@ const ListMessage = [
   },
 ];
 
+const listMenuTop = [
+  {
+    icon: <EditCalendarIcon />,
+    title: "Đăng bài",
+  },
+  {
+    icon: <AutoStoriesIcon />,
+    title: "Tin",
+  },
+  {
+    icon: <RadioIcon />,
+    title: "Thước phim",
+  },
+  {
+    icon: <YouTubeIcon />,
+    title: "Phòng họp mặt",
+  },
+];
+
+const listMenuBottom = [
+  {
+    icon: <TourIcon />,
+    title: "Trang",
+  },
+  {
+    icon: <CampaignIcon />,
+    title: "Quảng cáo",
+  },
+  {
+    icon: <PeopleOutlineIcon />,
+    title: "Nhóm",
+  },
+  {
+    icon: <EventIcon />,
+    title: "Sự kiện",
+  },
+  {
+    icon: <ShoppingBagIcon />,
+    title: "Bài niêm yết trên Marketplace",
+  },
+];
+
+const listMenuLeftTop = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/XXwl2m1vjqM.png",
+    title: "Sự kiện",
+    label:
+      " Tổ chức hoặc tìm sự kiện cùng những hoạt động khác trên mạng và ở quanh đây",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/-UR-mdYpyXa.png",
+    title: "Bạn bè",
+    label: " Tìm kiếm bạn bè hoặc những người bạn có thể biết",
+  },
+
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/NCc4ln3EAaS.png",
+    title: "Nhóm",
+    label: " Kết nối với những người cùng chung sở thích",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/E__N70WXrPM.png",
+    title: "Bảng tin",
+    label: " Xem bài viết phù hợp của những người và Trang bạn theo dõi",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png",
+    title: "Bảng feed",
+    label: " Xem bài viết gần đây nhất từ bạn bè , nhóm , Trang và hơn thế nữa",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/2QQIoQlVGnh.png",
+    title: "Trang",
+    label: "Khám phá và kết nối với các doanh nghiệp trên Facebook",
+  },
+];
+
+const listMenuLeftTop2 = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/eVgQ0NIygAW.png",
+    title: "Video chơi game",
+    label:
+      " Xem và kết nối vói những game và người phát trực tiếp mà bạn yêu thích",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Tvf-JvODx7o.png",
+    title: "Chơi game",
+    label: " Chơi game mà bạn yêu thích",
+  },
+
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/8L2T81pQAIa.png",
+    title: "Video",
+    label:
+      " Đích đến của video phù hợp với sở thích và quan hệ kết nối của bạn",
+  },
+];
+const listMenuLeftTop3 = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/xH4w-lk44we.png",
+    title: "Đơn đặt hàng và thanh toán",
+    label:
+      " Một cách dễ dàng và bảo mật để thanh toán trên các ứng dụng bạn đang dùng",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/rEk7fp0z5AA.png",
+    title: "Marketplace",
+    label: " Mua bán trong cộng đồng của bạn",
+  },
+];
+const listMenuLeftTop4 = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/VaQGECnx1Us.png",
+    title: "Hoạt động quảng cáo gần đây",
+    label: " Xem toàn bộ quảng cáo mà người dùng đã tương tác trên facebook",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/AYj2837MmgX.png",
+    title: "Kỷ niệm",
+    label: " Lướt xem ảnh video và bài viết cũ của bạn trên facebook",
+  },
+
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/X1wwBNSCk5F.png",
+    title: "Đã lưu",
+    label: " Tìm bài viết , ảnh và video mà bạn lưu vào xem sau",
+  },
+];
+const listMenuLeftTop5 = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/tx2VFwUKc-K.png",
+    title: "Trình quản lý quảng cáo",
+    label: " Tạo quảng cáo và theo dõi hiệu quả quảng cáo",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/_JPdPzLmp9j.png",
+    title: "Trung tâm quảng cáo",
+    label:
+      " Dùng các tính năng đơn giản hơn để quản lý mọi quảng cáo của bạn trên trang",
+  },
+];
+const listMenuLeftTop6 = [
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/9LIH24rbn9J.png",
+    title: "Hiến máu",
+    label: " Cập nhật thông tin và hoạt động hiến máu ở gần bạn",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/tKwWVioirmj.png",
+    title: "Trung tâm khoa học khí hậu",
+    label: "Tìm hiểu về vấn đề biến đổi khí hậu và tác động của hiện tượng này",
+  },
+
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/eChFgZ345zp.png",
+    title: "Ứng phó khẩn cấp",
+    label:
+      "Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra trên thế giới",
+  },
+  {
+    imgs: "https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/E_ZpLgQOkZb.png",
+    title: "Chiến dịch gây quỹ",
+    label: "Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích cá nhân",
+  },
+];
 const HeaderRight = () => {
   const [openPersonPage, setOpenPersonPage] = useState(false);
   const handleClickPresonPage = () => {
@@ -207,6 +381,7 @@ const HeaderRight = () => {
         <div key={index}>
           {item.id === 1 ? (
             <div
+              onClick={handleClickMenu}
               style={{
                 backgroundColor: "#e4e6eb",
                 borderRadius: "50%",
@@ -237,6 +412,7 @@ const HeaderRight = () => {
           ) : (
             item.id === 3 && (
               <div
+                className="fasfsdfdsf"
                 onClick={handleClickNotification}
                 style={{
                   backgroundColor: "#e4e6eb",
@@ -258,7 +434,11 @@ const HeaderRight = () => {
 
       {/* //trangcanhan */}
 
-      <div onClick={handleClickPresonPage} style={{ position: "relative" }}>
+      <div
+        className="trangcanhanclick"
+        onClick={handleClickPresonPage}
+        style={{ position: "relative" }}
+      >
         <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
       </div>
 
@@ -293,7 +473,11 @@ const HeaderRight = () => {
               <div style={{ fontWeight: "bold", color: "#3f8df4" }}>
                 Xem tất cả trang cá nhân
               </div>
-              <div className="fdsfdsfdf">3</div>
+              <div className="fdsfdsfdf">
+                <div style={{ color: "#fff", padding: "2px 4px 2px 4px" }}>
+                  3
+                </div>
+              </div>
             </div>
           </div>
           {/* //thanh cong cu */}
@@ -529,21 +713,14 @@ const HeaderRight = () => {
 
           {/* //dfdsf */}
 
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              columnGap: "10px",
-              opacity: "0.8",
-              backgroundColor: "#f0f2f5",
-              padding: "8px 16px 8px 16px",
-              marginTop: "10px",
-              borderRadius: "20px",
-            }}
-          >
-            <SearchIcon />
-            Tìm Kiếm Trên Message
-          </Box>
+          <div style={{ marginTop: "5px" }} className="searchMessengerCard">
+            <SearchIcon className="searchIcon" />
+            <input
+              style={{ height: "30px" }}
+              placeholder="Tìm kiếm trên facebook"
+              className="searchInput"
+            />
+          </div>
 
           <Box
             sx={{
@@ -626,6 +803,264 @@ const HeaderRight = () => {
               </Box>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* //menu */}
+
+      {openMenu && (
+        <div className="thanhthanh-cotaner">
+          <div style={{ fontWeight: "bold", fontSize: "20px" }}>Menu</div>
+
+          <div className="menu-container">
+            <div className="menu-left">
+              <div className="searchMessengerCard">
+                <SearchIcon className="searchIcon" />
+                <input
+                  style={{ height: "30px" }}
+                  placeholder="Tìm kiếm trong menu"
+                  className="searchInput"
+                />
+              </div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Xã hội
+              </div>
+              {listMenuLeftTop.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Giải trí
+              </div>
+              {listMenuLeftTop2.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* //fdsfsdf */}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Mua sắm
+              </div>
+              {listMenuLeftTop3.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* /fsdfsdfdsf */}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Cá nhân
+              </div>
+              {listMenuLeftTop4.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* //sdfsdfd */}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Chuyên nghiệp
+              </div>
+              {listMenuLeftTop5.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              {/* //fsdfsdfsdfd */}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Nguồn lực cho cộng đồng
+              </div>
+              {listMenuLeftTop6.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover-menu-left"
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    columnGap: "10px",
+                  }}
+                >
+                  <div>
+                    <img
+                      style={{ width: "40px", height: "40px" }}
+                      src={item.imgs}
+                    />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                      {item.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="border"></div>
+              <div
+                style={{ marginTop: "20px", fontSize: "19px" }}
+                className="dang"
+              >
+                Sản phẩm khác của Meta
+              </div>
+              <div
+                className="hover-menu-left"
+                style={{
+                  marginTop: "10px",
+                  display: "flex",
+                  columnGap: "10px",
+                }}
+              >
+                <div>
+                  <img
+                    style={{ width: "40px", height: "40px" }}
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/-ZRs50L5kHA.png"
+                  />
+                </div>
+                <div>
+                  <div style={{ fontWeight: "bold" }}>Messager nhí</div>
+                  <div style={{ opacity: "0.7", fontSize: "14px" }}>
+                    Cho phép bé nhắn tin với bạn thân và gia đình
+                  </div>
+                </div>
+              </div>
+              <div style={{ marginTop: "50px" }}>
+                <div></div>
+              </div>
+            </div>
+
+            <div className="menu-right">
+              <div style={{ fontWeight: "bold", fontSize: "18px" }}>Tạo</div>
+              {listMenuTop.map((item, index) => (
+                <div key={index} className="menu-right-child">
+                  <div className="backgrond-menu-right-child">{item.icon}</div>
+                  <div className="dang">{item.title}</div>
+                </div>
+              ))}
+              <div className="border"></div>
+              {listMenuBottom.map((item, index) => (
+                <div key={index} className="menu-right-child">
+                  <div className="backgrond-menu-right-child">{item.icon}</div>
+                  <div className="dang">{item.title}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </div>

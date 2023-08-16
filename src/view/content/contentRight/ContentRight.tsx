@@ -101,7 +101,7 @@ const ContentRight = () => {
               objectFit: "cover",
               marginTop: "10px",
             }}
-            src="/imgs/happy.png"
+            src="https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/-ZRs50L5kHA.png"
           />
           <div className="happy">
             <div className="happyopacity">Hôm nay là sinh nhật của</div>

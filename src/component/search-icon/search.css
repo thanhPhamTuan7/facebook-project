@@ -541,3 +541,21 @@
   align-items: center;
   column-gap: 2px;
 }
+
+.fsdfsdf {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fsdfsdf:hover {
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+.fdsfdsfdsf:hover {
+  filter: brightness(90%) saturate(100%);
+}

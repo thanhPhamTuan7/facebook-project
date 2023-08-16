@@ -3,9 +3,10 @@ import React from "react";
 function IconTin() {
   return (
     <svg
+      fontWeight="bold"
       width="1em"
       height="1em"
-      fill="currentColor"
+      fill="#fff"
       className="x1lliihq x1k90msu x2h7rmj x1qfuztq x14ctfv x1qx5ct2 xw4jnvo"
       viewBox="0 0 20 20"
     >

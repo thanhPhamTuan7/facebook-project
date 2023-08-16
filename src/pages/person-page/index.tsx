@@ -112,7 +112,7 @@ const PersonPage = () => {
         </div>
         <div className="border-person"></div>
         <div className="list-friend-container">
-          <div className="list-friend">
+          <div style={{ marginTop: "5px" }} className="list-friend">
             <div className="firend">Bài viết</div>
             <div className="firend">Giới thiệu</div>
             <div className="firend">Bạn bè</div>
@@ -131,7 +131,7 @@ const PersonPage = () => {
             </div>
           </div>
 
-          <div className="icon-preson">
+          <div style={{ marginTop: "5px" }} className="icon-preson">
             <MoreHorizIcon />
           </div>
         </div>

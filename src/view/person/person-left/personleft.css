@@ -1,7 +1,7 @@
 .person-page {
   background-color: #fff;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
@@ -112,9 +112,14 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.aaaaaaa:hover {
+  text-decoration: underline;
+}
+.aaaaaaa {
+  cursor: pointer;
+}
 
 .list-friend {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   column-gap: 30px;
@@ -122,14 +127,18 @@
 .firend {
   font-weight: bold;
   color: #727477;
+  cursor: pointer;
+  padding: 8px;
+}
+.firend:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
 }
 
 .icon-preson {
   background-color: #e4e6eb;
   width: fit-content;
   border-radius: 5px;
-  padding: 4px 8px 4px 8px;
-  margin-top: 12px;
   display: flex;
   align-items: center;
 }
@@ -190,7 +199,7 @@
 
 .person-left-friend {
   background-color: #fff;
-  padding: 8px 16px 16px 16px;
+  padding: 4px 16px 16px 16px;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
 
@@ -239,13 +248,73 @@
   margin-top: 5px;
 }
 
+.csts1:hover {
+  background-color: #dddddd;
+}
+
+.csts1 {
+  width: 100%;
+  height: 36px;
+  background-color: #e4e6eb;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.csts2:hover {
+  background-color: #dddddd;
+}
+
+.csts2 {
+  width: 100%;
+  height: 36px;
+  background-color: #e4e6eb;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.csts3:hover {
+  background-color: #dddddd;
+}
+
+.csts3 {
+  width: 100%;
+  height: 36px;
+  background-color: #e4e6eb;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.csts4:hover {
+  background-color: #dddddd;
+}
+
+.csts4 {
+  width: 100%;
+  height: 36px;
+  background-color: #e4e6eb;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 .name-firndfds {
   font-weight: bold;
   font-size: 14px;
-}
-
-.csts:hover {
-  background-color: red;
 }
 
 .frivate-icon:hover {
