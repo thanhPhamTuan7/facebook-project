@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import "./headercomponent.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
 
 const HeaderLeft = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,11 +23,13 @@ const HeaderLeft = () => {
           position: "relative",
         }}
       >
-        <img
-          onClick={handleClick}
-          style={{ width: "40px", height: "39px" }}
-          src="/imgs/iconfb.png"
-        />
+        <Link to="/">
+          <img
+            onClick={handleClick}
+            style={{ width: "40px", height: "40px", marginTop: "3px" }}
+            src="/imgs/iconfb.png"
+          />
+        </Link>
 
         <div className="searchMessengerCard">
           <SearchIcon className="searchIcon" />

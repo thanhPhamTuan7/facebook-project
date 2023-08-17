@@ -27,6 +27,7 @@ import CampaignIcon from "@mui/icons-material/Campaign";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import EventIcon from "@mui/icons-material/Event";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import { Link } from "react-router-dom";
 
 const listHeaderRight = [
   {
@@ -69,6 +70,7 @@ const listToolBar = [
   {
     icon: <LogoutIcon />,
     title: "Đăng xuất",
+    label: 1,
   },
 ];
 
@@ -447,19 +449,21 @@ const HeaderRight = () => {
       {openPersonPage && (
         <div className="thsdnfshdghj" style={{}}>
           <div className="chilren-thdfs">
-            <div
-              className="testtt"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                columnGap: "10px",
-              }}
-            >
-              <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
-              <div style={{ fontWeight: "bold", fontSize: "17px" }}>
-                Phạm Tuấn Thanh
+            <Link style={{ textDecoration: "none" }} to="/about">
+              <div
+                className="testtt"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  columnGap: "10px",
+                }}
+              >
+                <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
+                <div style={{ fontWeight: "bold", fontSize: "17px" }}>
+                  Phạm Tuấn Thanh
+                </div>
               </div>
-            </div>
+            </Link>
             <div className="border-fdsf"></div>
             <div
               className="testtt"
@@ -482,39 +486,85 @@ const HeaderRight = () => {
           </div>
           {/* //thanh cong cu */}
           {listToolBar.map((item, index) => (
-            <div
-              className="fsdfdsf-hover"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                fontWeight: "bold",
-                padding: "6px",
-                marginTop: "15px",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  columnGap: "10px",
-                  alignItems: "center",
-                }}
-              >
-                <div
+            <div>
+              {item.label === 1 ? (
+                <Link
                   style={{
-                    backgroundColor: "#e4e6eb",
-                    borderRadius: "50%",
-                    padding: "6px",
+                    textDecoration: "none",
+                  }}
+                  to="/login"
+                >
+                  <div
+                    className="fsdfdsf-hover"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      fontWeight: "bold",
+                      padding: "6px",
+                      marginTop: "15px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        columnGap: "10px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <div
+                        style={{
+                          backgroundColor: "#e4e6eb",
+                          borderRadius: "50%",
+                          padding: "6px",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        {item.icon}
+                      </div>
+
+                      <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                    </div>
+                    <div style={{}}>{item.iconright}</div>
+                  </div>
+                </Link>
+              ) : (
+                <div
+                  className="fsdfdsf-hover"
+                  style={{
                     display: "flex",
                     alignItems: "center",
+                    justifyContent: "space-between",
+                    fontWeight: "bold",
+                    padding: "6px",
+                    marginTop: "15px",
                   }}
                 >
-                  {item.icon}
-                </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      columnGap: "10px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundColor: "#e4e6eb",
+                        borderRadius: "50%",
+                        padding: "6px",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      {item.icon}
+                    </div>
 
-                <div style={{ fontWeight: "bold" }}>{item.title}</div>
-              </div>
-              <div style={{}}>{item.iconright}</div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                  </div>
+                  <div style={{}}>{item.iconright}</div>
+                </div>
+              )}
             </div>
           ))}
 

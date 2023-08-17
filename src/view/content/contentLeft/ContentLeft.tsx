@@ -2,7 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
 import "./contentLeft.css";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const listSlideLeft = [
   {
@@ -74,26 +74,33 @@ const ContentLeft = () => {
   return (
     <div style={{ marginLeft: "10px" }} className="contentleft">
       <div>
-        <div
-          className="avatar"
+        <Link
           style={{
-            display: "flex",
-            alignItems: "center",
-            columnGap: "10px",
-            fontWeight: "bold",
-            height: "45px",
-            cursor: "pointer",
-            width: "90%",
-            padding: "0 10px",
+            textDecoration: "none",
           }}
+          to="/about"
         >
-          <Avatar
-            style={{ width: "28px", height: "28px" }}
-            alt="Remy Sharp"
-            src="/imgs/avt.jpg"
-          />
-          Phạm Tuấn Thanh
-        </div>
+          <div
+            className="avatar"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              columnGap: "10px",
+              fontWeight: "bold",
+              height: "45px",
+              cursor: "pointer",
+              width: "90%",
+              padding: "0 10px",
+            }}
+          >
+            <Avatar
+              style={{ width: "28px", height: "28px" }}
+              alt="Remy Sharp"
+              src="/imgs/avt.jpg"
+            />
+            Phạm Tuấn Thanh
+          </div>
+        </Link>
 
         {listSlideLeft.map((item, index) => (
           <div

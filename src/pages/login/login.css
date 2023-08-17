@@ -1,0 +1,60 @@
+.login-form {
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  padding: 16px;
+  border-radius: 5px;
+}
+.quenpasssword {
+  text-align: center;
+  margin-top: 20px;
+  color: #3d94f6;
+  cursor: pointer;
+}
+.quenpasssword:hover {
+  text-decoration: underline;
+}
+
+.fsadfsfcqa {
+  cursor: pointer;
+  padding: 16px 4px 16px 4px;
+  background-color: #42b72a;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fsadfsfcqa:hover {
+  background-color: #36a420;
+}
+
+.imgs-login {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  height: 170px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.imgs-login:hover {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
+}
+
+.hover-taotrang:hover {
+  text-decoration: underline;
+}
+
+.okioki {
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.hover-bottom-tiengviet {
+  opacity: 0.7;
+  font-size: 12px;
+}
+.hover-bottom-tiengviet:hover {
+  text-decoration: underline;
+}
