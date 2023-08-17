@@ -2,6 +2,7 @@ import React from "react";
 import "./contentr.css";
 import Contact from "./Contact";
 import Conversation from "./Conversation";
+import { Link } from "@mui/material";
 
 const listContentRight = [
   {
@@ -21,6 +22,7 @@ const ContentRight = () => {
       <div className="contentrightcomponent" style={{ padding: "10px 10px" }}>
         Được tài trợ
       </div>
+
       {listContentRight.map((item, idx) => (
         <div
           style={{

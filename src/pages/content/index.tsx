@@ -3,6 +3,7 @@ import ContentLeft from "../../view/content/contentLeft/ContentLeft";
 import ContentContent from "../../view/content/contentCenter/ContentContent";
 import ContentRight from "../../view/content/contentRight/ContentRight";
 import "./style.css";
+import { Link } from "@mui/material";
 
 const Content = () => {
   return (

@@ -242,7 +242,7 @@ const PersonLeft = () => {
             <div className="all-anh">Xem tất cả ảnh</div>
           </div>
 
-          <div style={{ cursor: "pointer" }} className="container-image">
+          <div style={{ cursor: "pointer" }} className="container-image1">
             <img className="anh-friend" src="/imgs/tt1.jpg" />
             <img className="anh-friend" src="/imgs/tt2.jpg" />
             <img className="anh-friend" src="/imgs/tt3.jpg" />
@@ -277,28 +277,28 @@ const PersonLeft = () => {
             634 người bạn
           </div>
 
-          <div style={{ cursor: "pointer" }} className="container-image">
-            <div className="fsdfsdf">
+          <div style={{ cursor: "pointer" }} className="container-image1">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai1.jpg" />
               <div className="name-firndfds">Trần Minh</div>
             </div>
-            <div className="fsdfsdf">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai2.jpg" />
               <div className="name-firndfds">Vũ Hoàng</div>
             </div>
-            <div className="fsdfsdf">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai3.jpg" />
               <div className="name-firndfds">Long Chu</div>
             </div>
-            <div className="fsdfsdf">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai4.jpg" />
               <div className="name-firndfds">Nguyễn Hòa</div>
             </div>
-            <div className="fsdfsdf">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai5.jpg" />
               <div className="name-firndfds">Minh Ánh</div>
             </div>
-            <div className="fsdfsdf">
+            <div className="fsdfsdsadasddf">
               <img className="anh-friend" src="/imgs/gai6.jpg" />
               <div className="name-firndfds">Lê Chiến</div>
             </div>

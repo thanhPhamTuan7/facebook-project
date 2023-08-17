@@ -88,7 +88,12 @@ const ContentContent = () => {
               <div className="story">
                 <div className="storyTopBox">
                   <div style={{ position: "relative" }} className="storyCard">
-                    <img src={item.imgs} alt="" className="imgStoryCard" />
+                    <img
+                      style={{ objectFit: "cover" }}
+                      src={item.imgs}
+                      alt=""
+                      className="imgStoryCard"
+                    />
                     <div
                       style={{
                         position: "absolute",
@@ -119,6 +124,7 @@ const ContentContent = () => {
                                 width: "35px",
                                 height: "35px",
                                 borderRadius: "50%",
+                                objectFit: "cover",
                               }}
                               src={item.imgs_tin}
                             />

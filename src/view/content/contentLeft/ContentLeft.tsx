@@ -2,6 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
 import "./contentLeft.css";
+import { Link } from "@mui/material";
 
 const listSlideLeft = [
   {
@@ -93,6 +94,7 @@ const ContentLeft = () => {
           />
           Phạm Tuấn Thanh
         </div>
+
         {listSlideLeft.map((item, index) => (
           <div
             className="avatar"
