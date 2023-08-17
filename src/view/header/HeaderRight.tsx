@@ -76,54 +76,74 @@ const listToolBar = [
 
 const ListThongBao = [
   {
-    img: "/imgs/avt.jpg",
+    img: "/imgs/gai1.jpg",
     title: "Vũ Việt Hoàng",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "😂",
+    time: "2 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai2.jpg",
+    title: "Bùi Thị Thảo",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "💙",
+    time: "1 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai3.jpg",
+    title: "Lê Chiến",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "😍",
+    time: "4 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai4.jpg",
+    title: "Văn Hòa",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "😭",
+    time: "9 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai5.jpg",
+    title: "Vũ Văn Phước",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "😎",
+    time: "11 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai6.jpg",
+    title: "Lê Thị Thúy",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "🤓",
+    time: "0 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
+    img: "/imgs/gai7.jpg",
     title: "Vũ Việt Hoàng",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "💩",
+    time: "4 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/gai8.jpg",
+    title: "Minh Ánh",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "👾",
+    time: "20 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/it1.jpg",
+    title: "Vũ Văn Thanh",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "👹",
+    time: "22 ngày trước",
   },
   {
-    img: "/imgs/avt.jpg",
-    title: "Vũ Việt Hoàng",
+    img: "/imgs/it2.jpg",
+    title: "Nguyễn Thị Linh",
     label: "Đã chia sẻ bài viết của lang thang xã hội",
+    icon: "🤕",
+    time: "9 ngày trước",
   },
 ];
 
@@ -673,6 +693,7 @@ const HeaderRight = () => {
 
           {ListThongBao.map((item, index) => (
             <div
+              key={index}
               className="hover-thongbao"
               style={{
                 position: "relative",
@@ -684,7 +705,7 @@ const HeaderRight = () => {
               <div>
                 <Avatar
                   style={{ width: "56px", height: "56px" }}
-                  src="/imgs/avt.jpg"
+                  src={item.img}
                 />
                 <div
                   style={{
@@ -695,15 +716,13 @@ const HeaderRight = () => {
                     fontSize: "25px",
                   }}
                 >
-                  💝
+                  {item.icon}
                 </div>
               </div>
               <div>
                 <div>
-                  <div className="ten">Long Văn Chu</div>
-                  <div className="sauten">
-                    đã chia sẻ bài viết của lang thang xã hội
-                  </div>
+                  <div className="ten">{item.title}</div>
+                  <div className="sauten">{item.label}</div>
                 </div>
                 <div
                   style={{
@@ -712,7 +731,7 @@ const HeaderRight = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  6 ngày trước
+                  {item.time}
                 </div>
               </div>
               <div

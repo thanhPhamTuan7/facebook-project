@@ -15,6 +15,7 @@ import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SearchIcon from "../../../component/search-icon/SearchIcon";
 import Bangtin from "../../../component/bangtin/Bangtin";
+import { Link } from "react-router-dom";
 
 const listStory = [
   {
@@ -84,60 +85,122 @@ const ContentContent = () => {
 
         {listStory.map((item, index) => (
           <div key={index}>
-            <div style={{ padding: "16px 16px 16px 16px" }}>
-              <div className="story">
-                <div className="storyTopBox">
-                  <div style={{ position: "relative" }} className="storyCard">
-                    <img
-                      style={{ objectFit: "cover" }}
-                      src={item.imgs}
-                      alt=""
-                      className="imgStoryCard"
-                    />
-                    <div
-                      style={{
-                        position: "absolute",
-                        bottom: 5,
-                        left: 4,
-                        color: "#fff",
-                        fontWeight: "bold",
-                        fontSize: "14px",
-                      }}
-                    >
-                      {item.label}
-                    </div>
+            {item.id === 1 ? (
+              <Link to="/story-layout">
+                <div style={{ padding: "16px 16px 16px 16px" }}>
+                  <div className="story">
+                    <div className="storyTopBox">
+                      <div
+                        style={{ position: "relative" }}
+                        className="storyCard"
+                      >
+                        <img
+                          style={{ objectFit: "cover" }}
+                          src={item.imgs}
+                          alt=""
+                          className="imgStoryCard"
+                        />
+                        <div
+                          style={{
+                            position: "absolute",
+                            bottom: 5,
+                            left: 4,
+                            color: "#fff",
+                            fontWeight: "bold",
+                            fontSize: "14px",
+                          }}
+                        >
+                          {item.label}
+                        </div>
 
-                    <div>
-                      <div className="contentdsf">
-                        <div className="contact">
-                          <div
-                            style={{
-                              backgroundColor: "#1876f2",
-                              borderRadius: "50%",
-                              padding: "4px 4px 4px 4px",
-                              display: "flex",
-                              alignItems: "center",
-                            }}
-                          >
-                            <img
-                              style={{
-                                width: "35px",
-                                height: "35px",
-                                borderRadius: "50%",
-                                objectFit: "cover",
-                              }}
-                              src={item.imgs_tin}
-                            />
+                        <div>
+                          <div className="contentdsf">
+                            <div className="contact">
+                              <div
+                                style={{
+                                  backgroundColor: "#1876f2",
+                                  borderRadius: "50%",
+                                  padding: "4px 4px 4px 4px",
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <img
+                                  style={{
+                                    width: "35px",
+                                    height: "35px",
+                                    borderRadius: "50%",
+                                    objectFit: "cover",
+                                  }}
+                                  src={item.imgs_tin}
+                                />
+                              </div>
+
+                              <div className="background"></div>
+                            </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ) : (
+              <div style={{ padding: "16px 16px 16px 16px" }}>
+                <div className="story">
+                  <div className="storyTopBox">
+                    <div style={{ position: "relative" }} className="storyCard">
+                      <img
+                        style={{ objectFit: "cover" }}
+                        src={item.imgs}
+                        alt=""
+                        className="imgStoryCard"
+                      />
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: 5,
+                          left: 4,
+                          color: "#fff",
+                          fontWeight: "bold",
+                          fontSize: "14px",
+                        }}
+                      >
+                        {item.label}
+                      </div>
 
-                          <div className="background"></div>
+                      <div>
+                        <div className="contentdsf">
+                          <div className="contact">
+                            <div
+                              style={{
+                                backgroundColor: "#1876f2",
+                                borderRadius: "50%",
+                                padding: "4px 4px 4px 4px",
+                                display: "flex",
+                                alignItems: "center",
+                              }}
+                            >
+                              <img
+                                style={{
+                                  width: "35px",
+                                  height: "35px",
+                                  borderRadius: "50%",
+                                  objectFit: "cover",
+                                }}
+                                src={item.imgs_tin}
+                              />
+                            </div>
+
+                            <div className="background"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         ))}
       </div>
