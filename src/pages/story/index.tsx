@@ -13,9 +13,13 @@ const StoryLayout = () => {
           display: "grid",
           gridTemplateColumns: "1fr 2fr",
           paddingTop: "50px",
+          height: "500px",
         }}
       >
-        <div style={{ backgroundColor: "#fff", padding: "48px" }}>
+        <div
+          className="fdfdwacvw"
+          style={{ backgroundColor: "#fff", padding: "48px" }}
+        >
           <div
             style={{
               display: "flex",

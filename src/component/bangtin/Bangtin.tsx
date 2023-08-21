@@ -16,6 +16,8 @@ import { IconBangTin } from "../../pages/icons";
 import SearchIcon from "@mui/icons-material/Search";
 import SendIcon from "@mui/icons-material/Send";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import GroupIcon from "@mui/icons-material/Group";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 const listNews = [
   {
@@ -61,6 +63,41 @@ const listNews = [
   // },
 ];
 
+const listCmtBangtin = [
+  {
+    img: "/imgs/gai8.jpg",
+    title: "Thị Lê",
+    cmt: "Đi chơi không !",
+    friendChung: "Nguyễn Văn Hòa",
+    time: "2 phút trước",
+    date: "Ngày sinh : 30 tháng 3, 2000",
+  },
+  {
+    img: "/imgs/gai7.jpg",
+    title: "Tuấn Phương",
+    cmt: "Hay đó !",
+    friendChung: "Tuấn Nguyễn",
+    time: "42 phút trước",
+    date: "Ngày sinh : 7 tháng 12, 2023",
+  },
+  {
+    img: "/imgs/gai6.jpg",
+    title: "Nguyễn Hào Quang",
+    cmt: "Triển thôi !",
+    friendChung: "Nguyễn Bỉnh Khiêm",
+    time: "30 phút trước",
+    date: "Ngày sinh : 5 tháng 10, 1842",
+  },
+  {
+    img: "/imgs/gai5.jpg",
+    title: "Vũ Vịt Hoàng",
+    cmt: "Rất ra gì và này nọ!",
+    friendChung: "Cao Bá Quát",
+    time: "59 phút trước",
+    date: "Ngày sinh : 20 tháng 9, 1992",
+  },
+];
+
 const Bangtin = () => {
   return (
     <div>
@@ -94,7 +131,6 @@ const Bangtin = () => {
                 </div>
               </div>
             </div>
-
             <div style={{ marginTop: "-2px" }} className="postcenter">
               <span className="postText">{item.content}</span>
             </div>
@@ -169,7 +205,6 @@ const Bangtin = () => {
                 </span>
               </div>
             </div>
-
             <div className="borderPost"></div>
             <div className="postBottomCenter">
               <div className="boxPostLeft">
@@ -225,7 +260,6 @@ const Bangtin = () => {
               </div>
             </div>
             <div style={{ paddingLeft: "16px" }} className="borderPost"></div>
-
             <div
               style={{
                 padding: "4px 16px 4px 16px",
@@ -245,7 +279,7 @@ const Bangtin = () => {
                   src="/imgs/avt.jpg"
                 />
               </div>
-              <div
+              {/* <div
                 style={{
                   backgroundColor: "#eeeeee",
                   padding: "4px",
@@ -261,8 +295,7 @@ const Bangtin = () => {
                 }}
               >
                 <KeyboardArrowDownIcon />
-              </div>
-
+              </div> */}
               <div
                 style={{ paddingLeft: "16px", paddingRight: "16px" }}
                 className="searchMessengerCard"
@@ -283,6 +316,168 @@ const Bangtin = () => {
                 </div>
               </div>
             </div>
+
+            {/* //fsfsdf */}
+            {listCmtBangtin.map((item, index) => (
+              <div>
+                <div
+                  style={{ padding: "16px", display: "flex", columnGap: "5px" }}
+                >
+                  <Avatar
+                    style={{ width: "35px", height: "35px" }}
+                    alt="Remy Sharp"
+                    src={item.img}
+                    className="img-hover-thongtin"
+                  />
+                  <div className="reddđ">
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        columnGap: "10px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          border: "4px solid #1b74e4",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        <div
+                          style={{
+                            border: "4px solid #fff",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <Avatar
+                            style={{ width: "55px", height: "55px" }}
+                            alt="Remy Sharp"
+                            src={item.img}
+                          />
+                        </div>
+                      </div>
+                      <div style={{ lineHeight: "2" }}>
+                        <div style={{ fontWeight: "bold", fontSize: "20px" }}>
+                          {item.title}
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            columnGap: "5px",
+                          }}
+                        >
+                          <GroupIcon style={{ opacity: "0.7" }} />
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              columnGap: "5px",
+                            }}
+                          >
+                            <div>1 bạn chung:</div>
+                            <div style={{ fontWeight: "bold" }}>
+                              {item.friendChung}
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            columnGap: "5px",
+                          }}
+                        >
+                          <CalendarMonthIcon style={{ opacity: "0.7" }} />
+                          <div>{item.date}</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      style={{
+                        marginTop: "15px",
+                        display: "flex",
+                        alignItems: "center",
+                        columnGap: "20px",
+                      }}
+                    >
+                      <div
+                        className="person-right-add"
+                        style={{
+                          color: "#fff",
+                          fontWeight: "bold",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Thêm bạn bè
+                      </div>
+                      <div className="person-right-right">
+                        <img
+                          style={{ width: "20px", height: "20px" }}
+                          src="https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/-ZRs50L5kHA.png"
+                        />
+                        <div
+                          style={{
+                            fontWeight: "bold",
+                            color: "#172045",
+                            cursor: "pointer",
+                          }}
+                        >
+                          Nhắn tin
+                        </div>
+                      </div>
+                      <div style={{}} className="icon-preson1">
+                        <MoreHorizIcon />
+                      </div>
+                    </div>
+                  </div>
+                  <Box>
+                    <div className="tuanthanh">
+                      <div style={{ fontWeight: "bold" }}>{item.title}</div>
+                      <div style={{ fontSize: "14px" }}>{item.cmt}</div>
+                    </div>
+                    {/* //fddddddddddddddddddddddddddđ */}
+
+                    {/* ////////////fdssssssssssssss */}
+                    <div className="tuantahnh1">
+                      <MoreHorizIcon />
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        fontSize: "13px",
+                        columnGap: "10px",
+                        marginLeft: "15px",
+                        marginTop: "10px",
+                      }}
+                    >
+                      <div
+                        className="hover-binhluan-ccon-child"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Thích
+                      </div>
+                      <div
+                        className="hover-binhluan-ccon-child"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Phản hồi
+                      </div>
+                      <div
+                        className="hover-binhluan-ccon-child"
+                        style={{ opacity: "0.7" }}
+                      >
+                        {item.time}
+                      </div>
+                    </div>
+                  </Box>
+                </div>
+                {/* //fsfsd */}
+              </div>
+            ))}
           </div>
         </div>
       ))}

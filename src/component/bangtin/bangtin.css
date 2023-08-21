@@ -538,3 +538,58 @@
   align-items: center;
   column-gap: 2px;
 }
+
+.tuanthanh {
+  background-color: #eeeeee;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 20px;
+  line-height: 1.3;
+  position: relative;
+}
+.tuantahnh1 {
+  display: none;
+  position: absolute;
+
+  margin-top: -45px;
+  opacity: 0.7;
+  margin-left: 160px;
+}
+.tuanthanh:hover + .tuantahnh1 {
+  display: block;
+}
+.img-hover-thongtin {
+  position: relative;
+}
+
+.img-hover-thongtin:hover + .reddđ {
+  display: block;
+}
+
+.reddđ {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  position: absolute;
+  margin-top: -195px;
+  margin-left: -190px;
+  border-radius: 5px;
+  display: none;
+}
+
+.hover-binhluan-ccon-child {
+  cursor: pointer;
+}
+
+.hover-binhluan-ccon-child:hover {
+  text-decoration: underline;
+}
+
+.icon-preson1 {
+  background-color: #e4e6eb;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}

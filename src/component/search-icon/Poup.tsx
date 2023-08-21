@@ -8,7 +8,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./search.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import React from "react";
+import React, { useState } from "react";
+import PopupChild from "./PopupChild";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface Props {
   handleClose: () => void;
@@ -16,15 +18,28 @@ interface Props {
 }
 
 const Poup = ({ handleClose, open }: Props) => {
+  const [openPopupChild, setOpenPopupChild] = useState(false);
+
+  const handleClickPopupChild = () => {
+    setOpenPopupChild(true);
+  };
+  const handleClosePopupChild = () => {
+    setOpenPopupChild(false);
+  };
+
   return (
     <div>
       <Dialog
+        sx={{ marginTop: "30px" }}
         fullWidth
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
+        <div className="close-x" onClick={handleClose} style={{}}>
+          <CloseIcon />
+        </div>
         <DialogTitle
           sx={{ fontWeight: "bold", textAlign: "center", fontSize: "20px" }}
           id="alert-dialog-title"
@@ -43,7 +58,10 @@ const Poup = ({ handleClose, open }: Props) => {
             id="alert-dialog-description"
           >
             <Avatar className="fdsfdsfdsf" src="/imgs/avt.jpg" />
-            <div style={{ fontWeight: "bold" }}>
+            <div
+              onClick={handleClickPopupChild}
+              style={{ fontWeight: "bold  " }}
+            >
               <div style={{ fontWeight: "bold" }}>Phạm Tuấn Thanh</div>
               <div
                 style={{
@@ -181,6 +199,7 @@ const Poup = ({ handleClose, open }: Props) => {
           </Button> */}
         </DialogActions>
       </Dialog>
+      <PopupChild open={openPopupChild} handleClose={handleClosePopupChild} />
     </div>
   );
 };

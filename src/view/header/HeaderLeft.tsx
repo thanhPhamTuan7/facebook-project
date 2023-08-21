@@ -35,8 +35,9 @@ const HeaderLeft = () => {
           <SearchIcon className="searchIcon" />
           {isLoading && (
             <div style={{}}>
-              <Box
-                sx={{
+              <div
+                className="loading"
+                style={{
                   display: "flex",
                   backgroundColor: "#FFFFFF",
                   borderRadius: "50%",
@@ -46,8 +47,8 @@ const HeaderLeft = () => {
                   left: "590px",
                 }}
               >
-                <CircularProgress color="secondary" />
-              </Box>
+                <CircularProgress />
+              </div>
             </div>
           )}
           <input
