@@ -72,7 +72,7 @@ const listShortCuts = [
 
 const ContentLeft = () => {
   return (
-    <div style={{ marginLeft: "10px" }} className="contentleft">
+    <div style={{ position: "fixed", width: "300px" }} className="contentleft">
       <div>
         <Link
           style={{
@@ -168,7 +168,7 @@ const ContentLeft = () => {
                 color: "#39393a",
                 fontWeight: "bold",
                 width: "90%",
-                padding: "0 10px",
+                padding: "0px 10px",
                 height: "55px",
                 cursor: "pointer",
               }}

@@ -5,7 +5,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 
 const PersonLeft = () => {
   return (
-    <div style={{ flex: 2 }}>
+    <div className="" style={{ flex: 2 }}>
       <div style={{}} className="content-person-left">
         <div className="">
           <div style={{ width: "100%" }}>

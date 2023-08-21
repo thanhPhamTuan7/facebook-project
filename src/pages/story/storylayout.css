@@ -8,3 +8,42 @@
 .fdfdwacvw {
   box-shadow: inset -2px 0 1px 0 rgba(42, 27, 27, 0.2);
 }
+
+.ffdsfsdfdsfsdfsdfsdfsdf {
+  padding: 0 !important;
+}
+.tintintin:hover {
+  background: #77a7ff;
+}
+.thanhthanhthanh:hover {
+  background-color: #e984e1;
+}
+
+.tintintin {
+  background-color: #7084f0;
+  width: 220px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.thanhthanhthanh {
+  width: 220px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c352bd;
+  cursor: pointer;
+}
+.imgae-pading-hov-ewrwerwe {
+  width: fit-content;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

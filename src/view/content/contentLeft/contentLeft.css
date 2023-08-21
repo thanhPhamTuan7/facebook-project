@@ -17,6 +17,11 @@
 
 .contentleft {
   overflow: hidden;
-  height: 800px;
+  height: calc(90vh - 20px);
+  top: 70px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+.contentleft:hover {
   overflow-y: scroll;
 }

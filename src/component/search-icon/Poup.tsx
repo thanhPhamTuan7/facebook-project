@@ -11,6 +11,8 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import React, { useState } from "react";
 import PopupChild from "./PopupChild";
 import CloseIcon from "@mui/icons-material/Close";
+import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 
 interface Props {
   handleClose: () => void;
@@ -95,6 +97,88 @@ const Poup = ({ handleClose, open }: Props) => {
             />
           </div>
 
+          {/* //upload anh */}
+          <div className="hover-image-uplaod" style={{}}>
+            <div className="hover-bg-img" style={{}}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
+                <div
+                  className="upload-anh"
+                  style={{
+                    backgroundColor: "#e4e6eb",
+                    padding: "12px ",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <AddToPhotosIcon />
+                </div>
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    marginTop: "5px",
+                  }}
+                >
+                  Thêm ảnh/video
+                </div>
+                <div
+                  style={{
+                    opacity: "0.7",
+                    fontSize: "13px",
+                  }}
+                >
+                  hoặc kéo và thả
+                </div>
+              </div>
+            </div>
+
+            <div className="dtdd1">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  columnGap: "5px",
+                }}
+              >
+                <div
+                  className="upload-anh"
+                  style={{
+                    backgroundColor: "#e4e6eb",
+                    padding: "12px ",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <PhoneAndroidIcon />
+                </div>
+                <div style={{ opacity: "0.7", fontSize: "13px" }}>
+                  Thêm ảnh và video từ thiết bị di động
+                </div>
+              </div>
+
+              <div
+                className="hover-them"
+                style={{
+                  backgroundColor: "#e4e6eb",
+                  fontWeight: "bold",
+                  padding: "8px 16px",
+                  borderRadius: "5px",
+                }}
+              >
+                Thêm
+              </div>
+            </div>
+          </div>
+          {/* //fsdfdsf */}
           <div
             style={{
               marginTop: "70px",
@@ -109,7 +193,6 @@ const Poup = ({ handleClose, open }: Props) => {
                   width: "40px",
                   height: "40px",
                   cursor: "pointer",
-                  marginTop: "37px",
                 }}
                 src="https://www.facebook.com/images/composer/SATP_Aa_square-2x.png"
               />

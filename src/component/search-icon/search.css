@@ -575,3 +575,45 @@
 .close-x:hover {
   background-color: #dddddd;
 }
+
+.upload-anh {
+  width: fit-content;
+}
+.hover-image-uplaod {
+  margin-top: 40px;
+  border: 1px solid #dddddd;
+  background-color: #ffff;
+  padding: 16px;
+  border-radius: 10px;
+}
+.hover-bg-img {
+  background-color: #f7f8fa;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hover-bg-img:hover {
+  background-color: #eeeeeeee;
+}
+
+.dtdd1 {
+  background-color: #f7f8fa;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dtdd1:hover {
+  background-color: #eeeeeeee;
+}
+
+.hover-them {
+  width: fit-content;
+}

@@ -82,7 +82,7 @@ const listCmtBangtin = [
   },
   {
     img: "/imgs/gai6.jpg",
-    title: "Nguyễn Hào Quang",
+    title: "Nguyễn Hào ",
     cmt: "Triển thôi !",
     friendChung: "Nguyễn Bỉnh Khiêm",
     time: "30 phút trước",
@@ -90,7 +90,7 @@ const listCmtBangtin = [
   },
   {
     img: "/imgs/gai5.jpg",
-    title: "Vũ Vịt Hoàng",
+    title: "Lê Chiến",
     cmt: "Rất ra gì và này nọ!",
     friendChung: "Cao Bá Quát",
     time: "59 phút trước",

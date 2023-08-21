@@ -20,7 +20,6 @@ const Content = () => {
         className="contentleft"
         style={{
           flex: "3",
-          marginTop: "80px",
         }}
       >
         <ContentLeft />
@@ -28,8 +27,8 @@ const Content = () => {
       <div
         style={{
           flex: "5.5",
-          padding: "0 100px",
           marginTop: "80px",
+          padding: "0 80px",
         }}
       >
         <ContentContent />

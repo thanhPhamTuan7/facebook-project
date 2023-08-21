@@ -28,6 +28,7 @@ import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import EventIcon from "@mui/icons-material/Event";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { Link } from "react-router-dom";
+import MessageNew from "../../component/messageNew/MessageNew";
 
 const listHeaderRight = [
   {
@@ -453,9 +454,7 @@ const HeaderRight = () => {
           )}
         </div>
       ))}
-
       {/* //trangcanhan */}
-
       <div
         className="trangcanhanclick"
         onClick={handleClickPresonPage}
@@ -463,9 +462,7 @@ const HeaderRight = () => {
       >
         <Avatar alt="Remy Sharp" src="/imgs/avt.jpg" />
       </div>
-
       {/* //trangcanhan */}
-
       {openPersonPage && (
         <div className="thsdnfshdghj" style={{}}>
           <div className="chilren-thdfs">
@@ -591,9 +588,7 @@ const HeaderRight = () => {
           <NoteEnd />
         </div>
       )}
-
       {/* //noti */}
-
       {openNotification && (
         <div className="notifi">
           <div
@@ -748,7 +743,6 @@ const HeaderRight = () => {
           {/* ///ádfasdasd */}
         </div>
       )}
-
       {/* //tinnhan */}
 
       {openMessage && (
@@ -824,6 +818,7 @@ const HeaderRight = () => {
           </Box>
 
           {/* //mess */}
+
           {ListMessage.map((item, index) => (
             <div
               key={index}
@@ -875,8 +870,10 @@ const HeaderRight = () => {
         </div>
       )}
 
-      {/* //menu */}
+      {/* //thanh fixed tren man hinh */}
+      <MessageNew />
 
+      {/* //menu */}
       {openMenu && (
         <div className="thanhthanh-cotaner">
           <div style={{ fontWeight: "bold", fontSize: "20px" }}>Menu</div>

@@ -3,6 +3,7 @@ import "./contentr.css";
 import Contact from "./Contact";
 import Conversation from "./Conversation";
 import { Link } from "@mui/material";
+import CakeIcon from "@mui/icons-material/Cake";
 
 const listContentRight = [
   {
@@ -15,10 +16,16 @@ const listContentRight = [
     label: "Miễn phí vip6",
     labelMore: "vip6.vn",
   },
+  {
+    image:
+      "https://scontent.fhan14-2.fna.fbcdn.net/v/t45.1600-4/366131793_23857541982460769_1205621393667233429_n.jpg?stp=cp0_dst-jpg_p296x100_q75_spS444&_nc_cat=108&ccb=1-7&_nc_sid=67cdda&_nc_ohc=FVUn9A40tAIAX_GDRc6&_nc_ht=scontent.fhan14-2.fna&oh=00_AfBw3Mbu5gQ6tKxERzJkN5rzOXMNtTUbCqc7aGWjIhbeDg&oe=64E7B399",
+    label: "Miễn phí trẻ em",
+    labelMore: "bupffe.vn",
+  },
 ];
 const ContentRight = () => {
   return (
-    <div className="container">
+    <div style={{ position: "fixed", padding: "0 5px" }} className="container">
       <div className="contentrightcomponent" style={{ padding: "10px 10px" }}>
         Được tài trợ
       </div>
@@ -96,15 +103,17 @@ const ContentRight = () => {
           }}
           className="contentright-hover"
         >
-          <img
+          <div
             style={{
               width: "30px",
               height: "30px",
               objectFit: "cover",
               marginTop: "10px",
             }}
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/-ZRs50L5kHA.png"
-          />
+          >
+            <CakeIcon />
+          </div>
+
           <div className="happy">
             <div className="happyopacity">Hôm nay là sinh nhật của</div>
             <div className="happybold">Phạm Tuấn Thanh</div>

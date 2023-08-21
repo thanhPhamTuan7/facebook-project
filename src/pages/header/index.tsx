@@ -14,7 +14,6 @@ const Header = () => {
         backgroundColor: "#fff",
         display: "flex",
         alignItems: "center",
-
         position: "fixed",
         zIndex: 1,
       }}
