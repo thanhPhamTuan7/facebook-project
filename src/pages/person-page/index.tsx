@@ -1,8 +1,6 @@
 import React from "react";
 import "./person.css";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import AddIcon from "@mui/icons-material/Add";
-import { GrAdd } from "react-icons/gr";
 import EditIcon from "@mui/icons-material/Edit";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -21,12 +19,40 @@ const PersonPage = () => {
         {/* //header-person */}
 
         <div className="person-page">
-          <div className="person-bg">
+          <div style={{ position: "relative" }} className="person-bg">
             <img
               style={{ cursor: "pointer" }}
               className="person-img"
-              src="/imgs/anhbia.jpg"
+              src="/imgs/anhbiadep.jpg"
             />
+
+            <div>
+              <div
+                className="position-avatar"
+                style={{
+                  backgroundColor: "#00000066",
+                  top: "220px",
+                  right: "150px",
+                  position: "absolute",
+                }}
+              >
+                Tạo với avatar
+              </div>
+            </div>
+
+            <div>
+              <div
+                className="position-avatar"
+                style={{
+                  backgroundColor: "#00000066",
+                  top: "280px",
+                  right: "155px",
+                  position: "absolute",
+                }}
+              >
+                Thêm ảnh bìa
+              </div>
+            </div>
           </div>
 
           {/* //header-person-left */}

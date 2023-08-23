@@ -17,12 +17,17 @@
 
 .thsdnfshdghj {
   position: absolute;
-  /* bottom: -563px; */
+  top: 56px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
   padding: 16px;
   /* width: 360px; */
+  height: 450px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.thsdnfshdghj:hover {
+  overflow-y: scroll;
 }
 
 .chilren-thdfs {
@@ -59,13 +64,17 @@
 
 .notifi {
   position: absolute;
-  bottom: -530px;
+  bottom: -512px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
   padding: 16px;
   border-radius: 10px;
+
+  height: 480px;
+  overflow: hidden;
+}
+.notifi:hover {
   overflow-y: scroll;
-  height: 500px;
 }
 
 .thongbao-children {
@@ -129,14 +138,14 @@
 
 .message-container {
   position: absolute;
-  bottom: -531px;
+  top: 55px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
   width: 360px;
   padding: 16px;
   border-radius: 10px;
   overflow-y: scroll;
-  height: 500px;
+  height: 480px;
 }
 
 .hover-message:hover {
@@ -156,12 +165,13 @@
 
 .thanhthanh-cotaner {
   position: absolute;
-  bottom: -601px;
+  bottom: -525px;
   background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
   width: 620px;
   padding: 16px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .menu-container {
@@ -252,7 +262,7 @@
 
 .menu-left {
   overflow-y: scroll;
-  height: 500px;
+  height: 420px;
 }
 .padong {
   padding: 0 !important;

@@ -1105,7 +1105,7 @@ const HeaderRight = () => {
                   </div>
                 </div>
               </div>
-              <div style={{ marginTop: "50px" }}>
+              <div style={{ marginTop: "6px" }}>
                 <div></div>
               </div>
             </div>

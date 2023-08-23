@@ -1,5 +1,21 @@
 .contentcontent {
+}
+
+.storytin-contaner {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+}
+.stoyry-backgorund {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .story {
@@ -9,7 +25,7 @@
 .contentdsf {
   position: absolute;
   top: 10px;
-  left: 23px;
+  left: 15px;
 }
 
 .storyTopBox {
@@ -25,11 +41,19 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.img-story-child {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
 .imgStoryCard {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
   /* object-position: center; */
 }
 
@@ -64,18 +88,22 @@
   bottom: 15px;
   font-size: 14px;
   font-weight: bold;
+  margin-top: 5px;
 }
 
-.storyCard {
+.stoyry-backgorund {
   overflow: hidden;
+  position: relative;
 }
 
-.storyCard img {
+.stoyry-backgorund img {
   transition: 0.3s ease;
 }
 
-.storyCard:hover img {
+.stoyry-backgorund:hover img {
   transform: scale(1.03);
+  background-color: red;
+  filter: brightness(90%) saturate(100%);
 }
 
 .share {

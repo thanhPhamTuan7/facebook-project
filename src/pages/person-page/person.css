@@ -201,3 +201,13 @@
 .person-right-right:hover {
   background-color: #dddddd;
 }
+
+.position-avatar {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
