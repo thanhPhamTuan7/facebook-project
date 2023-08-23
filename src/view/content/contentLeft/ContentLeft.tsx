@@ -3,6 +3,7 @@ import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
 import "./contentLeft.css";
 import { Link } from "react-router-dom";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const listSlideLeft = [
   {
@@ -42,8 +43,9 @@ const listSlideLeft = [
     name: "Đặt hàng",
   },
   {
-    icon: "/imgs/12.png",
+    icon: "/imgs/rr.png",
     name: "Xem thêm",
+    label: 2,
   },
 ];
 

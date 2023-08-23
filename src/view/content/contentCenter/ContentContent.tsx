@@ -16,7 +16,6 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SearchIcon from "../../../component/search-icon/SearchIcon";
 import Bangtin from "../../../component/bangtin/Bangtin";
 import { Link } from "react-router-dom";
-
 const listStory = [
   {
     imgs: "/imgs/gai1.jpg",

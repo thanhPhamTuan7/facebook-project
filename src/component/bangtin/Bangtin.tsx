@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./bangtin.css";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
@@ -227,7 +227,7 @@ const Bangtin = () => {
               <div className="boxPostCenter">
                 <img
                   className="img-bangtin"
-                  src="/imgs/binhluan.png"
+                  src="/imgs/bl1.png"
                   alt="bình luận"
                 />
                 <span
@@ -244,7 +244,7 @@ const Bangtin = () => {
               <div className="boxPostRight">
                 <img
                   className="img-bangtin"
-                  src="/imgs/chiase.png"
+                  src="/imgs/bl2.png"
                   alt="chia se"
                 />
                 <span
@@ -437,6 +437,7 @@ const Bangtin = () => {
                       <div style={{ fontWeight: "bold" }}>{item.title}</div>
                       <div style={{ fontSize: "14px" }}>{item.cmt}</div>
                     </div>
+
                     {/* //fddddddddddddddddddddddddddđ */}
 
                     {/* ////////////fdssssssssssssss */}

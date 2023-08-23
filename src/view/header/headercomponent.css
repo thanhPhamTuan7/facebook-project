@@ -4,6 +4,9 @@
 
 .header-center {
   padding: 8px 32px 8px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .trangcanhanclick:hover {
   filter: brightness(90%) saturate(100%);
@@ -253,4 +256,71 @@
 }
 .padong {
   padding: 0 !important;
+}
+
+.input-search-container {
+  background-color: #fff;
+  width: 330px;
+  height: 480px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  position: absolute;
+  margin-top: 455px;
+  border-radius: 10px;
+  margin-left: -20px;
+  padding: 16px;
+}
+
+.input-x {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.ganday-cs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.hover-ganday-cs {
+  padding: 8px;
+}
+.hover-ganday-cs:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+.avt-title-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+.avt-title-chlid {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.avt-title-x:hover {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.x-child {
+  padding: 8px;
+}
+.x-child:hover {
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+.hover-input-quyalij {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-input-quyalij:hover {
+  background-color: #eeeeee;
+  border-radius: 50%;
 }
