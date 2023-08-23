@@ -29,6 +29,7 @@ import EventIcon from "@mui/icons-material/Event";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { Link } from "react-router-dom";
 import MessageNew from "../../component/messageNew/MessageNew";
+import PocupMessage from "./PocupMessage";
 
 const listHeaderRight = [
   {
@@ -744,7 +745,6 @@ const HeaderRight = () => {
         </div>
       )}
       {/* //tinnhan */}
-
       {openMessage && (
         <div className="message-container">
           <div
@@ -869,10 +869,8 @@ const HeaderRight = () => {
           ))}
         </div>
       )}
-
       {/* //thanh fixed tren man hinh */}
       <MessageNew />
-
       {/* //menu */}
       {openMenu && (
         <div className="thanhthanh-cotaner">
@@ -1129,6 +1127,8 @@ const HeaderRight = () => {
           </div>
         </div>
       )}
+
+      <PocupMessage />
     </div>
   );
 };

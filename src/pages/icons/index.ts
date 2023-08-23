@@ -11,3 +11,5 @@ export { default as Trochoi } from "./trochoi";
 export { default as IconSearch } from "./iconSearch";
 export { default as IconTin } from "./icontin";
 export { default as IconBangTin } from "./iconbangtin";
+export { default as IconMess1 } from "./iconmess1";
+export { default as IconMess2 } from "./iconmess2";

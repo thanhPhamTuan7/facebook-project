@@ -18,6 +18,7 @@ import SendIcon from "@mui/icons-material/Send";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import GroupIcon from "@mui/icons-material/Group";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import IconDong from "../icon-dong/IconDong";
 
 const listNews = [
   {
@@ -223,6 +224,32 @@ const Bangtin = () => {
                 >
                   Thích
                 </span>
+                <div className="hover-icon-5-container">
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4299734559659.56d57de04bda4.gif"
+                  />
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/65ea2034559659.56d57de06cea2.gif"
+                  />
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35c9bf34559659.56d57de0eb467.gif"
+                  />
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6105c734559659.56d59c54f0d05.gif"
+                  />
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3eee1d34559659.56d59de621daa.gif"
+                  />
+                  <img
+                    className="imgs-anh-dong"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e66e6e34559659.56d57de095aee.gif"
+                  />
+                </div>
               </div>
               <div className="boxPostCenter">
                 <img
@@ -296,6 +323,7 @@ const Bangtin = () => {
               >
                 <KeyboardArrowDownIcon />
               </div> */}
+
               <div
                 style={{ paddingLeft: "16px", paddingRight: "16px" }}
                 className="searchMessengerCard"
@@ -453,6 +481,7 @@ const Bangtin = () => {
                         columnGap: "10px",
                         marginLeft: "15px",
                         marginTop: "10px",
+                        position: "relative",
                       }}
                     >
                       <div
@@ -461,6 +490,11 @@ const Bangtin = () => {
                       >
                         Thích
                       </div>
+
+                      {/* //hover icon thich */}
+
+                      <IconDong />
+
                       <div
                         className="hover-binhluan-ccon-child"
                         style={{ fontWeight: "bold" }}

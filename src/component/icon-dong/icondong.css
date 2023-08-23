@@ -1,0 +1,18 @@
+.hover-icon-5-container {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  margin-top: -90px;
+  margin-left: -50px;
+}
+
+.imgs-anh-dong {
+  width: 50px;
+  height: 50px;
+}

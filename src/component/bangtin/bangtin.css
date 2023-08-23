@@ -359,6 +359,7 @@
   justify-content: center;
   height: 40px;
   cursor: pointer;
+  position: relative;
 }
 
 .boxPostLeft:hover {
@@ -550,7 +551,6 @@
 .tuantahnh1 {
   display: none;
   position: absolute;
-
   margin-top: -45px;
   opacity: 0.7;
   margin-left: 160px;
@@ -579,6 +579,7 @@
 
 .hover-binhluan-ccon-child {
   cursor: pointer;
+  position: relative;
 }
 
 .hover-binhluan-ccon-child:hover {
@@ -592,4 +593,31 @@
   padding: 8px;
   display: flex;
   align-items: center;
+}
+
+.hover-icon-5-container {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  margin-top: -90px;
+  margin-left: -50px;
+}
+
+.imgs-anh-dong {
+  width: 50px;
+  height: 50px;
+}
+
+.hover-binhluan-ccon-child:hover + .hover-icon-5-container {
+  display: block;
+}
+
+.boxPostLeft:hover + .hover-icon-5-container {
+  display: block;
 }
