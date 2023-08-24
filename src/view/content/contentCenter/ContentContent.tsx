@@ -220,7 +220,6 @@ const ContentContent = () => {
           </div>
         </div>
       </div>
-
       {/* // bảng tin .  dữ liệu  */}
       <Bangtin />
     </div>
