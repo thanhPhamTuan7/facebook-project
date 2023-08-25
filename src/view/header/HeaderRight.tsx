@@ -723,7 +723,7 @@ const HeaderRight = () => {
                 <div
                   style={{
                     color: "#2f83f3",
-                    fontSize: "14px",
+                    fontSize: "12px",
                     fontWeight: "bold",
                   }}
                 >
@@ -745,6 +745,7 @@ const HeaderRight = () => {
         </div>
       )}
       {/* //tinnhan */}
+
       {openMessage && (
         <div className="message-container">
           <div
@@ -867,9 +868,13 @@ const HeaderRight = () => {
               </Box>
             </div>
           ))}
+
+          <div className="fiexd-message">Xem tất cả trong message</div>
         </div>
       )}
+
       {/* //thanh fixed tren man hinh */}
+
       <MessageNew />
       {/* //menu */}
       {openMenu && (

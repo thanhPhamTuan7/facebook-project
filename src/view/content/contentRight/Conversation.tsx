@@ -24,17 +24,22 @@ const listConversation = [
 const Conversation = () => {
   return (
     <div>
-      <div style={{ marginTop: "20px" }} className="contentrightcomponent">
+      <div
+        style={{ marginTop: "20px", padding: "10px" }}
+        className="contentrightcomponent"
+      >
         Cuộc trò chuyện nhóm
       </div>
       {listConversation.map((item, index) => (
         <div
+          className="trochuyennhom"
           key={index}
           style={{
             display: "flex",
             alignItems: "center",
-            marginTop: "20px",
             columnGap: "10px",
+            padding: "10px",
+            cursor: "pointer",
           }}
         >
           <div className="contact">
@@ -76,6 +81,8 @@ const Conversation = () => {
             alignItems: "center",
             justifyContent: "center",
             color: "#3a3939",
+            marginLeft: "15px",
+            cursor: "pointer",
           }}
         >
           <AddIcon />

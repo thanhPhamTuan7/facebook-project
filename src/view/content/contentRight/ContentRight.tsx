@@ -2,7 +2,6 @@ import React from "react";
 import "./contentr.css";
 import Contact from "./Contact";
 import Conversation from "./Conversation";
-import { Link } from "@mui/material";
 import CakeIcon from "@mui/icons-material/Cake";
 
 const listContentRight = [

@@ -19,6 +19,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import GroupIcon from "@mui/icons-material/Group";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import IconDong from "../icon-dong/IconDong";
+import PupupBangtin from "./PupupBangtin";
 
 const listNews = [
   {
@@ -100,6 +101,14 @@ const listCmtBangtin = [
 ];
 
 const Bangtin = () => {
+  const [popupCmt, setPopupCmt] = useState(false);
+  const handleClickPopup = () => {
+    setPopupCmt(true);
+  };
+  const handleClosePopup = () => {
+    setPopupCmt(false);
+  };
+
   return (
     <div>
       {listNews.map((item, index) => (
@@ -251,7 +260,10 @@ const Bangtin = () => {
                   />
                 </div>
               </div>
-              <div className="boxPostCenter">
+
+              {/* //can lam logic */}
+
+              <div onClick={handleClickPopup} className="boxPostCenter">
                 <img
                   className="img-bangtin"
                   src="/imgs/bl1.png"
@@ -268,6 +280,10 @@ const Bangtin = () => {
                   Bình luận
                 </span>
               </div>
+
+              {/* //popup can lam lo gic  */}
+              <PupupBangtin open={popupCmt} handleClose={handleClosePopup} />
+
               <div className="boxPostRight">
                 <img
                   className="img-bangtin"
