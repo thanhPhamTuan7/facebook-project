@@ -23,7 +23,7 @@ const PupupBangtin = ({ open, handleClose }: PropsPopupCmt) => {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle className="dialong-field" id="responsive-dialog-title">
+        <DialogTitle sx={{ position: "relative" }} className="dialong-field">
           <div
             style={{
               fontWeight: "bold",
@@ -31,7 +31,7 @@ const PupupBangtin = ({ open, handleClose }: PropsPopupCmt) => {
           >
             Bài viết
           </div>
-          <div className="">
+          <div className="close-icon">
             <CloseIcon />
           </div>
         </DialogTitle>

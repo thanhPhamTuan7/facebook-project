@@ -629,3 +629,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.close-icon {
+  position: absolute;
+}

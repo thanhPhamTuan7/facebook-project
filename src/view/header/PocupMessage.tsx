@@ -10,35 +10,44 @@ import CloseIcon from "@mui/icons-material/Close";
 import { IconMess1, IconMess2, IconTin } from "../../pages/icons";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
+interface PocupMessageProps {
+  handleClose: () => void;
+}
+
 const listTinNhanTraLoi = [
   {
-    title: "Hello !",
+    title: "Ê đang đâu đó",
+    titl1: "đang nhà chứ đâu",
     avt: "/imgs/gai1.jpg",
   },
   {
-    title: "Hello !",
+    title: "đi chơi đê",
+    titl1: "đi đâu",
     avt: "/imgs/gai1.jpg",
   },
   {
-    title: "Hello !",
+    title: "ra hồ tây chơi cho mát",
+    titl1: "đang nhà chứ đâu",
     avt: "/imgs/gai1.jpg",
   },
   {
-    title: "Hello !",
+    title: "oke mấy h",
+    titl1: "8h nhé",
     avt: "/imgs/gai1.jpg",
   },
   {
-    title: "Hello !",
+    title: "oke mang mũ theo đi",
+    titl1: "oki",
     avt: "/imgs/gai1.jpg",
   },
 ];
 
-const PocupMessage = () => {
+const PocupMessage = ({ handleClose }: PocupMessageProps) => {
   return (
     <div className="pocup-message">
       <div className="top-top">
         <div className="top-child-t">
-          <Avatar alt="Remy Sharp" src="/imgs/gai1.jpg" />
+          <Avatar alt="Remy Sharp" src="imgs/gai1.jpg" />
           <div>
             <div style={{ fontWeight: "bold" }}>Minh Ánh</div>
 
@@ -58,7 +67,7 @@ const PocupMessage = () => {
           <div className="icon-top-right">
             <HorizontalRuleIcon />
           </div>
-          <div className="icon-top-right">
+          <div onClick={handleClose} className="icon-top-right">
             <CloseIcon />
           </div>
         </div>
@@ -78,7 +87,9 @@ const PocupMessage = () => {
                   src="/imgs/gai1.jpg"
                 />
               </div>
-              <div className="tinnhan-you">{item.title}</div>
+              <div style={{ marginTop: "10px" }} className="tinnhan-you">
+                {item.titl1}
+              </div>
             </div>
           </div>
         ))}
@@ -120,6 +131,8 @@ const PocupMessage = () => {
         </div>
         <ThumbUpIcon style={{ opacity: "0.5" }} />
       </div>
+
+      <div className="bongbongchat-">sdfds</div>
     </div>
   );
 };

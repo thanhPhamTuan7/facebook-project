@@ -1,5 +1,4 @@
 .pocup-message {
-  display: none;
   position: fixed;
   bottom: 0;
   margin-right: 120px;
@@ -52,6 +51,7 @@
   border-radius: 40px;
 }
 .tinnhan-ccontainer {
+  margin-top: 10px;
 }
 
 .tinnhanme-container-right {
@@ -105,4 +105,16 @@
 
 .icon-svg {
   opacity: 0.5;
+}
+
+.icon-top-right {
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-top-right:hover {
+  background-color: #eeeeee;
+  border-radius: 50%;
 }

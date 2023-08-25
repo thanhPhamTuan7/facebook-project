@@ -1,5 +1,4 @@
 import { Avatar } from "@mui/material";
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -27,6 +26,14 @@ const Poup = ({ handleClose, open }: Props) => {
   };
   const handleClosePopupChild = () => {
     setOpenPopupChild(false);
+  };
+
+  const [openImage, setOpenImage] = useState(false);
+  const handleClickImage = () => {
+    setOpenImage(true);
+  };
+  const handleCloseImage = () => {
+    setOpenImage(false);
   };
 
   return (
@@ -98,86 +105,93 @@ const Poup = ({ handleClose, open }: Props) => {
           </div>
 
           {/* //upload anh */}
-          <div className="hover-image-uplaod" style={{}}>
-            <div className="hover-bg-img" style={{}}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
+          {openImage && (
+            <div className="hover-image-uplaod" style={{}}>
+              <div className="hover-bg-img" style={{ position: "relative" }}>
                 <div
-                  className="upload-anh"
                   style={{
-                    backgroundColor: "#e4e6eb",
-                    padding: "12px ",
-                    borderRadius: "50%",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                    flexDirection: "column",
                   }}
                 >
-                  <AddToPhotosIcon />
+                  <div
+                    className="upload-anh"
+                    style={{
+                      backgroundColor: "#e4e6eb",
+                      padding: "12px ",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <AddToPhotosIcon />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "bold",
+                      marginTop: "5px",
+                    }}
+                  >
+                    Thêm ảnh/video
+                  </div>
+                  <div
+                    style={{
+                      opacity: "0.7",
+                      fontSize: "13px",
+                    }}
+                  >
+                    hoặc kéo và thả
+                  </div>
                 </div>
+
+                <div onClick={handleCloseImage} className="icon-close-imgs">
+                  <CloseIcon />
+                </div>
+              </div>
+
+              <div className="dtdd1">
                 <div
                   style={{
+                    display: "flex",
+                    alignItems: "center",
+                    columnGap: "5px",
+                  }}
+                >
+                  <div
+                    className="upload-anh"
+                    style={{
+                      backgroundColor: "#e4e6eb",
+                      padding: "12px ",
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <PhoneAndroidIcon />
+                  </div>
+                  <div style={{ opacity: "0.7", fontSize: "13px" }}>
+                    Thêm ảnh và video từ thiết bị di động
+                  </div>
+                </div>
+
+                <div
+                  className="hover-them"
+                  style={{
+                    backgroundColor: "#e4e6eb",
                     fontWeight: "bold",
-                    marginTop: "5px",
+                    padding: "8px 16px",
+                    borderRadius: "5px",
                   }}
                 >
-                  Thêm ảnh/video
-                </div>
-                <div
-                  style={{
-                    opacity: "0.7",
-                    fontSize: "13px",
-                  }}
-                >
-                  hoặc kéo và thả
+                  Thêm
                 </div>
               </div>
             </div>
+          )}
 
-            <div className="dtdd1">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  columnGap: "5px",
-                }}
-              >
-                <div
-                  className="upload-anh"
-                  style={{
-                    backgroundColor: "#e4e6eb",
-                    padding: "12px ",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <PhoneAndroidIcon />
-                </div>
-                <div style={{ opacity: "0.7", fontSize: "13px" }}>
-                  Thêm ảnh và video từ thiết bị di động
-                </div>
-              </div>
-
-              <div
-                className="hover-them"
-                style={{
-                  backgroundColor: "#e4e6eb",
-                  fontWeight: "bold",
-                  padding: "8px 16px",
-                  borderRadius: "5px",
-                }}
-              >
-                Thêm
-              </div>
-            </div>
-          </div>
           {/* //fsdfdsf */}
           <div
             style={{
@@ -232,10 +246,12 @@ const Poup = ({ handleClose, open }: Props) => {
                 columnGap: "10px",
               }}
             >
-              <img
-                className="fsdfsdf"
-                src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png"
-              />
+              <div onClick={handleClickImage}>
+                <img
+                  className="fsdfsdf"
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png"
+                />
+              </div>
               <img
                 className="fsdfsdf"
                 src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/MqTJr_DM3Jg.png"

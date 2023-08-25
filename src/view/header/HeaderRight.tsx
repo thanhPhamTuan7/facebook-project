@@ -1133,7 +1133,7 @@ const HeaderRight = () => {
         </div>
       )}
 
-      <PocupMessage />
+      {/* <PocupMessage /> */}
     </div>
   );
 };

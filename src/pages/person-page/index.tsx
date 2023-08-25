@@ -32,7 +32,7 @@ const PersonPage = () => {
                 style={{
                   backgroundColor: "#00000066",
                   top: "220px",
-                  right: "150px",
+                  marginLeft: "-180px",
                   position: "absolute",
                 }}
               >
@@ -46,7 +46,7 @@ const PersonPage = () => {
                 style={{
                   backgroundColor: "#00000066",
                   top: "280px",
-                  right: "155px",
+                  marginLeft: "-179px",
                   position: "absolute",
                 }}
               >
